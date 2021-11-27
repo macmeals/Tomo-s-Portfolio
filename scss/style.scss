@@ -2,5 +2,12 @@
 
 @use './foundation/reset';
 @use './foundation/base';
+@use './foundation/mixin';
 
+@use './layout/l-header';
+
+@use './object/component/c-icon';
+@use './object/component/c-btn';
+
+@use './object/project/p-header';
 

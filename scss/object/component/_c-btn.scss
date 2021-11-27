@@ -1,0 +1,13 @@
+@use '../../foundation/mixin' as mixin;
+
+.c-btn {
+  @include mixin.pc {
+    display: none;
+  }
+  
+  height: 50px;
+  width: 80px;
+  text-align: center;
+  border: 1px solid; 
+ 
+}

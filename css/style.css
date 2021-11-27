@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v3.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -393,8 +394,74 @@ th {
   font-weight: bold;
 }
 
-.c-test {
-  font-size: large;
-  color: red;
+a, h1, h2, button {
+  font-family: "Slabo 27px", serif;
+  color: white;
+}
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html {
+  background-color: lemonchiffon;
+}
+
+/* PCはWidthが1200pxより大きい */
+/* タブレットはWidthが1200pxより小さい */
+/* スマホはWidthが700pxより小さい */
+.l-header {
+  background-color: forestgreen;
+  display: flex;
+  justify-content: center;
+}
+
+.c-icon__twitter {
+  width: 38px;
+  height: 31px;
+}
+
+.c-icon__instagram {
+  width: 30px;
+  height: 30px;
+}
+
+.c-btn {
+  height: 50px;
+  width: 80px;
+  text-align: center;
+  border: 1px solid;
+}
+
+@media (min-width: 1201px) {
+  .c-btn {
+    display: none;
+  }
+}
+.p-header {
+  background-color: fuchsia;
+  width: 920px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.p-header__under {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-header__menu {
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-header__icon {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
