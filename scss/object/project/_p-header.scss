@@ -1,0 +1,27 @@
+.p-header {
+  background-color: fuchsia;
+  width: 920px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__under {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+  }
+
+}
