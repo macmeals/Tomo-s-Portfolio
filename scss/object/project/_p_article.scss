@@ -1,0 +1,14 @@
+.p-firstview  {
+    height: 700px;
+    background: url(/img/FV_shikak.png) no-repeat left bottom /80px 80px,
+                url(/img/firstview.jpg) center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+        &__title {
+          width: 920px;
+          font-size: 104px;
+        }
+}

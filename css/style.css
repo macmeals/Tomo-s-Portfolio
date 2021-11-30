@@ -404,7 +404,7 @@ p {
 }
 
 html {
-  background-color: lemonchiffon;
+  background-color: grey;
 }
 
 /* PCはWidthが1200pxより大きい */
@@ -463,5 +463,19 @@ html {
   display: flex;
   width: 120px;
   justify-content: space-between;
+}
+
+.p-firstview {
+  height: 700px;
+  background: url(/img/FV_shikak.png) no-repeat left bottom/80px 80px, url(/img/firstview.jpg) center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.p-firstview__title {
+  width: 920px;
+  font-size: 104px;
 }
 /*# sourceMappingURL=style.css.map */
