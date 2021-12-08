@@ -1,0 +1,26 @@
+
+@use "../../foundation/mixin" as mixin;
+
+.c-underline {
+    &__white {
+        position: relative;
+            &::after{
+                @include mixin.underline(white);
+                
+                    }
+            &:hover::after{
+                transform: scale(1, 1);   
+                           }
+    }
+
+    &__black {
+      position: relative;
+          &::after{
+               @include mixin.underline(black);
+                  }
+          &:hover::after{
+              transform: scale(1, 1);   
+                         }
+  }
+
+}

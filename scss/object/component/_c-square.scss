@@ -1,0 +1,23 @@
+.c-square{
+    >li {
+      text-align: center;
+      height: 50px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      >a {
+        display: block;
+      }
+    }
+    >li:nth-of-type(4){
+      background-color: white;
+      border-radius:  10px;
+      >a{
+        color:black;
+      }
+    }
+  
+    
+   
+}
