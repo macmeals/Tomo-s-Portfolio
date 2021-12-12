@@ -42,3 +42,15 @@ $smartphone:699px;  /* スマホはWidthが700pxより小さい */
     background-color: $underline_color;
   
 }
+
+// Top画面の下線スタイリング
+@mixin whiteunderline {
+  // 共通の下線のスタイリング
+  position: absolute;  // 共通の下線位置の基準
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}

@@ -1,0 +1,50 @@
+// mixin用名前空間の宣言
+ @use '../../foundation/mixin' as mixin;
+
+
+// ファーストビュー
+.p-firstview  {
+    height: 700px;
+    background: url(/img/FV_shikak.png) no-repeat left bottom /80px 80px,
+                url(/img/firstview.jpg) center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        &__title {
+          width: 920px;
+          font-size: 104px;
+        }
+}
+
+// Work、about、skill、 contactの内容
+.p-article {
+    background-color: gold;
+    width: 920px;
+    height: 2000px;
+}
+
+.p-topwork {
+    &__header {
+      display: flex;
+    
+    }
+    &__header-l {
+      height: 600px;
+      width: 320px;
+      background-color: black;
+      display: flex;
+
+      >p {
+      font-family: 'Slabo 27px', serif;
+      font-size: 72px;
+      position: relative;
+ 
+      }
+      
+      >p::after {
+      @include mixin.whiteunderline;
+
+      }
+
+    }
+}

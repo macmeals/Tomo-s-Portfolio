@@ -1,16 +1,22 @@
 @charset "UTF-8";
 
+// 基本的なパーツ
 @use './foundation/reset';
 @use './foundation/base';
 @use './foundation/mixin';
 
+// 全体レイアウト
 @use './layout/l-header';
+@use './layout/l-container';
 
+// 各パーツ（アイコンやボタン、下線）
 @use './object/component/c-icon';
 @use './object/component/c-btn';
 @use './object/component/c-underline';
 @use './object/component/c-square';
+@use './object/component/c-img';
 
+// 各種コンポーネント
 @use './object/project/p-header';
-@use './object/project/p_article';
+@use './object/project/p-article';
 

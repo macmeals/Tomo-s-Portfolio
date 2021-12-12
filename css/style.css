@@ -401,6 +401,7 @@ a, h1, h2, button {
 
 p {
   font-family: "Noto Sans JP", sans-serif;
+  color: white;
 }
 
 html {
@@ -412,6 +413,11 @@ html {
 /* スマホはWidthが700pxより小さい */
 .l-header {
   background-color: forestgreen;
+  display: flex;
+  justify-content: center;
+}
+
+.l-container {
   display: flex;
   justify-content: center;
 }
@@ -502,6 +508,12 @@ html {
   color: black;
 }
 
+.c-img {
+  height: 600px;
+  width: 240px;
+  object-fit: cover;
+}
+
 .p-header {
   background-color: fuchsia;
   width: 920px;
@@ -540,5 +552,38 @@ html {
 .p-firstview__title {
   width: 920px;
   font-size: 104px;
+}
+
+.p-article {
+  background-color: gold;
+  width: 920px;
+  height: 2000px;
+}
+
+.p-topwork__header {
+  display: flex;
+}
+
+.p-topwork__header-l {
+  height: 600px;
+  width: 320px;
+  background-color: black;
+  display: flex;
+}
+
+.p-topwork__header-l > p {
+  font-family: "Slabo 27px", serif;
+  font-size: 72px;
+  position: relative;
+}
+
+.p-topwork__header-l > p::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
