@@ -432,6 +432,11 @@ html {
   height: 30px;
 }
 
+.c-redicon {
+  height: 80px;
+  width: 80px;
+}
+
 .c-btn {
   height: 50px;
   width: 80px;
@@ -579,11 +584,22 @@ html {
 
 .p-topwork__header-l > p::after {
   position: absolute;
-  bottom: -4px;
-  left: 0;
+  top: 70px;
+  left: -300%;
   content: "";
-  width: 100%;
+  width: 400%;
   height: 1px;
   background-color: white;
+}
+
+.p-topwork__header-r {
+  height: 240px;
+  width: 240px;
+  background-color: green;
+}
+
+.p-topwork__header-r > p {
+  font-family: "Slabo 27px", serif;
+  font-size: 112px;
 }
 /*# sourceMappingURL=style.css.map */

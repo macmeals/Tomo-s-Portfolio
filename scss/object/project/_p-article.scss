@@ -34,17 +34,26 @@
       background-color: black;
       display: flex;
 
-      >p {
-      font-family: 'Slabo 27px', serif;
-      font-size: 72px;
-      position: relative;
- 
-      }
+          >p {
+          font-family: 'Slabo 27px', serif;
+          font-size: 72px;
+          position: relative;
+          }
       
-      >p::after {
-      @include mixin.whiteunderline;
-
-      }
-
+          >p::after {
+          @include mixin.whiteunderline;
+          }
     }
+    &__header-r{
+      height: 240px;
+      width: 240px;
+      background-color:green;
+
+           >p {
+            font-family: 'Slabo 27px', serif;
+            font-size: 112px;
+           }
+    }
+
+
 }
