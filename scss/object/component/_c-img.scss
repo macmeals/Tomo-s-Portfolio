@@ -1,0 +1,16 @@
+.c-img {
+  height: 600px;
+  width: 240px;
+  object-fit: cover;
+
+  &__work {
+      height: 360px;
+      width: 360px;
+      object-fit: cover;
+  }
+
+  &__character {
+      font-family: 'Noto Sans JP', sans-serif;
+  }
+
+}

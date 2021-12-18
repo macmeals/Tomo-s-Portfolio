@@ -1,0 +1,109 @@
+// mixin用名前空間の宣言
+ @use '../../foundation/mixin' as mixin;
+
+
+// ファーストビュー
+.p-firstview  {
+    height: 700px;
+    background: url(/img/FV_shikak.png) no-repeat left bottom /80px 80px,
+                url(/img/firstview.jpg) center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        &__title {
+          width: 920px;
+          font-size: 104px;
+        }
+}
+
+// Work、about、skill、 contactの内容
+.p-article {
+    background-color: gold;
+    width: 920px;
+    height: 2000px;
+
+}
+
+.p-topwork {
+  position: relative; //Gridの位置合わせ
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      
+    
+    }
+    &__header-l {
+      height: 600px;
+      width: 320px;
+      background-color: black;
+      display: flex;
+
+          >p {
+          font-family: 'Slabo 27px', serif;
+          font-size: 72px;
+          position: relative;
+          }
+      
+          >p::after {
+          @include mixin.whiteunderline;
+          }
+    }
+    &__header-r{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+           >p {
+            font-family: 'Slabo 27px', serif;
+            font-size: 112px;
+            height: 101px;
+           }
+    }
+    
+    &__body {
+      position: absolute;
+      top: 250px;
+      right: 0px;
+     
+    }
+
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 400px);
+      grid-template-rows: repeat(2,400px);;
+      
+      >dl {
+        margin-left: 40px;
+        text-align: center;
+        
+      }
+    }
+
+    &__footer {
+      width: 920px;
+      background-color: black;
+      position: absolute;
+      top: 1100px;
+      left: 0px;
+      display:flex;
+      justify-content: space-between;
+    }
+
+    &__linkbox {
+      height: 40px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      >a {
+        display: block;
+       
+      }
+
+      
+    }
+
+}

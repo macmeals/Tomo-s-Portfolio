@@ -1,3 +1,5 @@
+// ヘッダーのSNSアイコン
+
 .c-icon {
     &__twitter {
         width: 38px;
@@ -10,4 +12,16 @@
         height: 30px;
 
     }
+}
+
+// 赤のあしらい
+.c-redicon {
+    height: 80px;
+    width: 80px;
+}
+
+// 白のあしらい（直角の直線）
+.c-whiteicon {
+    height: 40px;
+    width: 40px;
 }

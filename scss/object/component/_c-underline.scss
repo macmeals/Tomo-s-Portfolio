@@ -22,5 +22,40 @@
               transform: scale(1, 1);   
                          }
   }
+}
+
+// 矢印のリンク
+.c-linkline {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    
+    // 下線のアンダーラインのアニメーション
+        &::after{
+            @include mixin.underline(white);
+            height: 1px;
+            width: 100%;
+            
+                }
+        &:hover::after{
+            transform: scale(1, 1);   
+                    }
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 25%;
+            height: 1px;
+            background-color:black;
+            bottom: -4px;
+            left: 100%;
+            transition: transform .3s;
+        }
+        &:hover::before {
+            transform-origin: bottom left; 
+            background-color:white;
+            transform: rotate(-135deg);
+        }
 
 }
+
