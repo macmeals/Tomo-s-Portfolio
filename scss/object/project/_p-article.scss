@@ -24,9 +24,10 @@
 
 }
 
+// Work、about、skill、 contactの共通部分
 .p-topwork {
   position: relative; //Gridの位置合わせ
-
+  height: 1200px;
     &__header {
       display: flex;
       justify-content: space-between;
@@ -54,7 +55,7 @@
       flex-direction: column;
       align-items: flex-end;
 
-           >p {
+           >h2 {
             font-family: 'Slabo 27px', serif;
             font-size: 112px;
             height: 101px;
@@ -105,5 +106,35 @@
 
       
     }
+
+}
+
+// Aboutセクション
+.p-topabout {
+  position: relative;  //紹介文の位置合わせ
+  background-color: red;
+  height: 800px;
+
+  &__body {
+      height: 350px;
+      position: absolute;
+      top: 250px;
+      left: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  &__name {
+      display: flex;
+      >p {
+         margin-left: 30px;
+      }
+  }
+
+  &__footer {
+      @extend .p-topwork__footer;
+      top: 700px;
+  }
 
 }
