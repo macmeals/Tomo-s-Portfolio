@@ -394,7 +394,7 @@ th {
   font-weight: bold;
 }
 
-a, h1, h2, button {
+a, h1, h2, h3, button {
   font-family: "Slabo 27px", serif;
   color: white;
 }
@@ -624,6 +624,7 @@ html {
 
 .p-topwork {
   position: relative;
+  height: 1200px;
 }
 
 .p-topwork__header {
@@ -660,7 +661,7 @@ html {
   align-items: flex-end;
 }
 
-.p-topwork__header-r > p {
+.p-topwork__header-r > h2 {
   font-family: "Slabo 27px", serif;
   font-size: 112px;
   height: 101px;
@@ -683,7 +684,7 @@ html {
   text-align: center;
 }
 
-.p-topwork__footer {
+.p-topwork__footer, .p-topabout__footer {
   width: 920px;
   background-color: black;
   position: absolute;
@@ -703,5 +704,33 @@ html {
 
 .p-topwork__linkbox > a {
   display: block;
+}
+
+.p-topabout {
+  position: relative;
+  background-color: red;
+  height: 800px;
+}
+
+.p-topabout__body {
+  height: 350px;
+  position: absolute;
+  top: 250px;
+  left: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.p-topabout__name {
+  display: flex;
+}
+
+.p-topabout__name > p {
+  margin-left: 30px;
+}
+
+.p-topabout__footer {
+  top: 700px;
 }
 /*# sourceMappingURL=style.css.map */
