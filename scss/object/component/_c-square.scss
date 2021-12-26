@@ -1,4 +1,7 @@
-// ヘッダーのリンク
+// mixin用名前空間の宣言
+@use '../../foundation/mixin' as mixin;
+
+// ヘッダーの「Contact」のリンク
 .c-square{
     >li {
       text-align: center;
@@ -16,6 +19,27 @@
       border-radius:  10px;
       >a{
         color:black;
+      }
+    }
+
+    &__skilltitle {
+      @include mixin.verticalcenter;
+      background-color: white;
+      height: 40px ;
+      
+       >p {
+         color: black;
+         padding-left: 20px;
+       } 
+    }
+
+    &__skillcontent {
+      background-color: white;
+      height: 120px ;
+
+      >p {
+        color: black;
+        padding: 40px 0 0 40px;
       }
     }
   

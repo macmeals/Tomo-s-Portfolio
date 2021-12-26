@@ -33,7 +33,7 @@ $smartphone:699px;  /* スマホはWidthが700pxより小さい */
     left: 0;
     content: '';
     width: 100%;
-    height: 2px;
+    height: 1px;
 
     // 共通の左から右への下線のアニメーションのスタイリング
     transform-origin: left top;
@@ -45,12 +45,37 @@ $smartphone:699px;  /* スマホはWidthが700pxより小さい */
 
 // Top画面の下線スタイリング
 @mixin whiteunderline {
-  // 共通の下線のスタイリング
-  position: absolute;  // 共通の下線位置の基準
-  top: 70px;
-  left: -300%;
-  content: '';
-  width: 400%;
-  height: 1px;
-  background-color: white;
+    // 共通の下線のスタイリング
+    position: absolute;  // 共通の下線位置の基準
+    top: 75px;
+    left: -300%;
+    content: '';
+    width: 400%;
+    height: 1px;
+    background-color: white;
+}
+
+// 縦の中央揃えのスタイリング。コンテンツ内の文字を中央に揃える際、利用する。
+@mixin verticalcenter {
+    display: flex;
+    align-items: center;
+  
+}
+
+// topページの「Work」「About」「contact」のfooter共通部分
+@mixin topfooter($top_height) {
+    width: 920px;
+    background-color: black;
+    position: absolute;
+    top: $top_height; //コンテンツトップからどの位置に表示されるか
+    left: 0px;
+    display:flex;
+    justify-content: space-between;
+}
+
+// topページの「skill」等のコンテンツ幅を均等にするためのスタイリング
+@mixin verticalspace-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
