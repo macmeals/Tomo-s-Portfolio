@@ -464,7 +464,7 @@ html {
   left: 0;
   content: "";
   width: 100%;
-  height: 2px;
+  height: 1px;
   transform-origin: left top;
   transform: scale(0, 1);
   transition: transform 0.3s;
@@ -485,7 +485,7 @@ html {
   left: 0;
   content: "";
   width: 100%;
-  height: 2px;
+  height: 1px;
   transform-origin: left top;
   transform: scale(0, 1);
   transition: transform 0.3s;
@@ -508,7 +508,7 @@ html {
   left: 0;
   content: "";
   width: 100%;
-  height: 2px;
+  height: 1px;
   transform-origin: left top;
   transform: scale(0, 1);
   transition: transform 0.3s;
@@ -560,6 +560,28 @@ html {
   color: black;
 }
 
+.c-square__skilltitle {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 40px;
+}
+
+.c-square__skilltitle > p {
+  color: black;
+  padding-left: 20px;
+}
+
+.c-square__skillcontent {
+  background-color: white;
+  height: 120px;
+}
+
+.c-square__skillcontent > p {
+  color: black;
+  padding: 40px 0 0 40px;
+}
+
 .c-img {
   height: 600px;
   width: 240px;
@@ -607,8 +629,8 @@ html {
   height: 700px;
   background: url(/img/FV_shikak.png) no-repeat left bottom/80px 80px, url(/img/firstview.jpg) center/cover;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .p-firstview__title {
@@ -647,7 +669,7 @@ html {
 
 .p-topwork__header-l > p::after {
   position: absolute;
-  top: 70px;
+  top: 75px;
   left: -300%;
   content: "";
   width: 400%;
@@ -684,7 +706,7 @@ html {
   text-align: center;
 }
 
-.p-topwork__footer, .p-topabout__footer {
+.p-topwork__footer {
   width: 920px;
   background-color: black;
   position: absolute;
@@ -698,7 +720,6 @@ html {
   height: 40px;
   width: 200px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -709,7 +730,7 @@ html {
 .p-topabout {
   position: relative;
   background-color: red;
-  height: 800px;
+  height: 700px;
 }
 
 .p-topabout__body {
@@ -731,6 +752,49 @@ html {
 }
 
 .p-topabout__footer {
-  top: 700px;
+  width: 920px;
+  background-color: black;
+  position: absolute;
+  top: 600px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-topskill {
+  position: relative;
+  height: 1000px;
+  background-color: rebeccapurple;
+}
+
+.p-topskill__body {
+  position: absolute;
+  top: 250px;
+  left: 160px;
+  height: 700px;
+  background-color: saddlebrown;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-topskill__skill {
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-topskill__skillbox {
+  height: 170px;
+  background: salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-topskill__footer {
+  position: absolute;
+  top: 910px;
 }
 /*# sourceMappingURL=style.css.map */

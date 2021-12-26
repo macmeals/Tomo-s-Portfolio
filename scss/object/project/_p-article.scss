@@ -7,9 +7,8 @@
     height: 700px;
     background: url(/img/FV_shikak.png) no-repeat left bottom /80px 80px,
                 url(/img/firstview.jpg) center/cover;
-    display: flex;
+    @include mixin.verticalcenter;
     justify-content: center;
-    align-items: center;
         &__title {
           width: 920px;
           font-size: 104px;
@@ -26,115 +25,139 @@
 
 // Work、about、skill、 contactの共通部分
 .p-topwork {
-  position: relative; //Gridの位置合わせ
-  height: 1200px;
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      
-    
-    }
-    &__header-l {
-      height: 600px;
-      width: 320px;
-      background-color: black;
-      display: flex;
-
-          >p {
-          font-family: 'Slabo 27px', serif;
-          font-size: 72px;
-          position: relative;
-          }
-      
-          >p::after {
-          @include mixin.whiteunderline;
-          }
-    }
-    &__header-r{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-           >h2 {
-            font-family: 'Slabo 27px', serif;
-            font-size: 112px;
-            height: 101px;
-           }
-    }
-    
-    &__body {
-      position: absolute;
-      top: 250px;
-      right: 0px;
-     
-    }
-
-
-    &__grid {
-      display: grid;
-      grid-template-columns: repeat(2, 400px);
-      grid-template-rows: repeat(2,400px);;
-      
-      >dl {
-        margin-left: 40px;
-        text-align: center;
+    position: relative; //Gridと、Moreリンクの位置基準
+    height: 1200px;
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          
         
-      }
-    }
+        }
+        &__header-l {
+          height: 600px;
+          width: 320px;
+          background-color: black;
+          display: flex;
 
-    &__footer {
-      width: 920px;
-      background-color: black;
-      position: absolute;
-      top: 1100px;
-      left: 0px;
-      display:flex;
-      justify-content: space-between;
-    }
+              >p {
+              font-family: 'Slabo 27px', serif;
+              font-size: 72px;
+              position: relative;
+              }
+          
+              >p::after {
+              @include mixin.whiteunderline;
+              }
+        }
+        &__header-r{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
 
-    &__linkbox {
-      height: 40px;
-      width: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+              >h2 {
+                font-family: 'Slabo 27px', serif;
+                font-size: 112px;
+                height: 101px;
+              }
+        }
+        
+        &__body {
+          position: absolute;
+          top: 250px;
+          right: 0px;
+        
+        }
 
-      >a {
-        display: block;
-       
-      }
 
-      
-    }
+        &__grid {
+          display: grid;
+          grid-template-columns: repeat(2, 400px);
+          grid-template-rows: repeat(2,400px);;
+          
+          >dl {
+            margin-left: 40px;
+            text-align: center;
+            
+          }
+        }
 
-}
+        &__footer {
+          @include mixin.topfooter(1100px);
+
+        }
+
+        &__linkbox {
+          height: 40px;
+          width: 200px;
+          display: flex;
+          align-items: center;
+
+          >a {
+            display: block;
+          
+          }          
+        }
+
+} 
 
 // Aboutセクション
 .p-topabout {
-  position: relative;  //紹介文の位置合わせ
-  background-color: red;
-  height: 800px;
+    position: relative;  //紹介文とMoreリンクの位置基準
+    background-color: red;
+    height: 700px;
 
-  &__body {
-      height: 350px;
-      position: absolute;
-      top: 250px;
-      left: 160px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-  }
+        &__body {
+            height: 350px;
+            position: absolute;
+            top: 250px;
+            left: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
 
-  &__name {
-      display: flex;
-      >p {
-         margin-left: 30px;
-      }
-  }
+        &__name {
+            display: flex;
+            >p {
+              margin-left: 30px;
+            }
+        }
 
-  &__footer {
-      @extend .p-topwork__footer;
-      top: 700px;
-  }
+        &__footer {
+            @include mixin.topfooter(600px);
+        }
 
 }
+
+// skillセクション
+.p-topskill {
+    position: relative; //紹介文とMoreリンクの位置基準
+    height: 1000px;
+    background-color: rebeccapurple;
+        &__body {
+            position: absolute;
+            top: 250px;
+            left: 160px;
+            height: 700px;
+            background-color: saddlebrown;
+            @include mixin.verticalspace-between
+          
+        }
+        &__skill {
+            height: 630px;
+            @include mixin.verticalspace-between
+        }
+
+        &__skillbox {
+            height: 170px;
+            background: salmon;
+            @include mixin.verticalspace-between
+
+        }
+
+        &__footer {
+            position: absolute;
+            top: 910px;
+        }
+}
+
