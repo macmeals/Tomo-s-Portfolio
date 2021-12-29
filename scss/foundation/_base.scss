@@ -4,7 +4,7 @@ a,h1,h2,h3,button {
 }
 
 
-p {
+p,label {
   font-family: 'Noto Sans JP', sans-serif;
   color:white;
 }
@@ -13,4 +13,9 @@ p {
 html {
   background-color: grey;
 }
+
+input,textarea {
+  background-color: white;
+}
+
 
