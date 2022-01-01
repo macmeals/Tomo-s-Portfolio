@@ -1,13 +1,41 @@
 @use '../../foundation/mixin' as mixin;
 
+// ヘッダー部分「MENU」
 .c-btn {
-  @include mixin.pc {
-    display: none;
-  }
-  
-  height: 50px;
-  width: 80px;
-  text-align: center;
-  border: 1px solid; 
+    @include mixin.pc {
+      display: none;
+    }
+    
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid; 
+
+    &__side {
+        height: 50px;
+        width: 50px;
+        color: black;
+        position: relative;
+
+        &::before, &::after {
+            position: absolute;
+            top: 25px;
+            left: 0px;
+            content: '';
+            width: 50px;
+            height: 1px;
+            background-color:black;
+        }
+
+        &::before {
+            transform: rotate( 45deg );
+        }
+
+        &::after {
+            transform: rotate( -45deg );
+        }
+
+
+    }
  
 }

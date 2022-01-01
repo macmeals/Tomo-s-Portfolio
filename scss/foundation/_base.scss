@@ -1,4 +1,4 @@
-a,h1,h2,h3,button {
+a,h1,h2,h3,button,small {
   font-family: 'Slabo 27px', serif;
   color:white;
 }
@@ -12,10 +12,17 @@ p,label {
 
 html {
   background-color: grey;
+      // Edgeのスクロール非常時
+      &::-webkit-scrollbar {
+           display: none;
+      }
+
 }
 
 input,textarea {
   background-color: white;
 }
+
+
 
 

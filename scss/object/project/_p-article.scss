@@ -7,7 +7,7 @@
 .p-article {
     background-color: gold;
     width: 100vw;
-    height: 2000px;
+    height: 100%;
 
     &__contents {
       width: 100vw;
@@ -178,7 +178,7 @@
     position: relative; //説明文とFormの位置基準
     height: 1000px;
     width: 920px;
-    background-color: green;
+    background-color:black;
         &__body {
           position: absolute;
           top: 250px;
@@ -220,4 +220,42 @@
         &__footer {
           @include mixin.topfooter(900px);
         }
+}
+
+// Sideバー
+.p-topside  {
+    &__btn {
+      position: absolute;
+      top: 50px;
+      right: 100px;
+    }
+
+    &__link {
+      position: absolute;
+      top: 300px;
+      list-style: none;
+      height: 400px;
+      background-color: cadetblue;
+    }
+
+    &__chara {
+        font-size: 24px;
+        color: black;
+        font-family: 'Slabo 27px', serif;
+       
+    }
+}
+
+//footer 
+.p-footer {
+     height: 80px;
+     @include mixin.verticalspace-between;
+     align-items: center;
+     margin-top: 40px;
+
+     &__link {
+         width: 920px;
+         display: flex;
+         justify-content: space-between;
+     }
 }

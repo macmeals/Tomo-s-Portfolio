@@ -394,7 +394,7 @@ th {
   font-weight: bold;
 }
 
-a, h1, h2, h3, button {
+a, h1, h2, h3, button, small {
   font-family: "Slabo 27px", serif;
   color: white;
 }
@@ -406,6 +406,10 @@ p, label {
 
 html {
   background-color: grey;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 input, textarea {
@@ -421,8 +425,28 @@ input, textarea {
   justify-content: center;
 }
 
+.l-body {
+  overflow-x: hidden;
+}
+
 .l-container {
   position: relative;
+}
+
+.l-side {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 50vw;
+  height: 100%;
+  background-color: white;
+}
+
+.l-footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .c-icon__twitter {
@@ -457,6 +481,31 @@ input, textarea {
     display: none;
   }
 }
+.c-btn__side {
+  height: 50px;
+  width: 50px;
+  color: black;
+  position: relative;
+}
+
+.c-btn__side::before, .c-btn__side::after {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+}
+
+.c-btn__side::before {
+  transform: rotate(45deg);
+}
+
+.c-btn__side::after {
+  transform: rotate(-45deg);
+}
+
 .c-underline__white {
   position: relative;
 }
@@ -497,6 +546,21 @@ input, textarea {
 
 .c-underline__black:hover::after {
   transform: scale(1, 1);
+}
+
+.c-underline__footer {
+  height: 20px;
+  width: 80vw;
+  position: relative;
+}
+
+.c-underline__footer::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 10px;
+  background-color: white;
 }
 
 .c-linkline {
@@ -601,6 +665,10 @@ input, textarea {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.c-character__noto {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .p-header {
   background-color: fuchsia;
   width: 920px;
@@ -631,7 +699,7 @@ input, textarea {
 .p-article {
   background-color: gold;
   width: 100vw;
-  height: 2000px;
+  height: 100%;
 }
 
 .p-article__contents {
@@ -816,7 +884,7 @@ input, textarea {
   position: relative;
   height: 1000px;
   width: 920px;
-  background-color: green;
+  background-color: black;
 }
 
 .p-topcontact__body {
@@ -866,6 +934,41 @@ input, textarea {
   position: absolute;
   top: 900px;
   left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-topside__btn {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+.p-topside__link {
+  position: absolute;
+  top: 300px;
+  list-style: none;
+  height: 400px;
+  background-color: cadetblue;
+}
+
+.p-topside__chara {
+  font-size: 24px;
+  color: black;
+  font-family: "Slabo 27px", serif;
+}
+
+.p-footer {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.p-footer__link {
+  width: 920px;
   display: flex;
   justify-content: space-between;
 }
