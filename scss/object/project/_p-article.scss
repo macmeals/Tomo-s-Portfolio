@@ -3,18 +3,35 @@
 
 
 
-// Work、about、skill、 contactの内容
+// Work、about、skill、 contactの共通
 .p-article {
     background-color: gold;
     width: 100vw;
     height: 100%;
 
     &__contents {
-      width: 100vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header {
+        width: 920px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__header-l {
+        display: flex;
+        position: relative;
+
+        >h2 {
+            position: absolute;
+            left: 85px;
+            top: -10px;
+            font-size: 96px;
+            
+        }
     }
 }
 
@@ -257,5 +274,20 @@
          width: 920px;
          display: flex;
          justify-content: space-between;
+     }
+}
+
+// Workページのコンテンツ
+.p-workcontent {
+     width: 920px;
+     &__header {
+        display: flex;
+        justify-content: space-between;
+     }
+     &__header-l {
+        @include mixin.verticalcenter;
+          >p {
+              margin-left: 20px;
+          }
      }
 }

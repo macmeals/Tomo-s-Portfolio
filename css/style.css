@@ -548,13 +548,13 @@ input, textarea {
   transform: scale(1, 1);
 }
 
-.c-underline__footer {
+.c-underline__border {
   height: 20px;
   width: 80vw;
   position: relative;
 }
 
-.c-underline__footer::after {
+.c-underline__border::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -665,6 +665,17 @@ input, textarea {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.c-img__header {
+  height: 100px;
+  width: 520px;
+  object-fit: cover;
+}
+
+.c-img__workheader {
+  height: 40px;
+  width: 40px;
+}
+
 .c-character__noto {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -707,6 +718,24 @@ input, textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.p-article__header {
+  width: 920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-article__header-l {
+  display: flex;
+  position: relative;
+}
+
+.p-article__header-l > h2 {
+  position: absolute;
+  left: 85px;
+  top: -10px;
+  font-size: 96px;
 }
 
 .p-firstview {
@@ -971,5 +1000,23 @@ input, textarea {
   width: 920px;
   display: flex;
   justify-content: space-between;
+}
+
+.p-workcontent {
+  width: 920px;
+}
+
+.p-workcontent__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-workcontent__header-l {
+  display: flex;
+  align-items: center;
+}
+
+.p-workcontent__header-l > p {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

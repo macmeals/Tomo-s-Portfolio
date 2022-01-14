@@ -13,4 +13,17 @@
       font-family: 'Noto Sans JP', sans-serif;
   }
 
+  // WorkやAbout、その他コンテンツページのヘッダーの画像
+  &__header {
+      height: 100px;
+      width: 520px;
+      object-fit: cover;
+      
+  }
+
+  &__workheader {
+     height: 40px;
+     width: 40px;
+  }
+
 }
