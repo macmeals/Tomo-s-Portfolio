@@ -3,6 +3,12 @@
   width: 240px;
   object-fit: cover;
 
+  &__logo {
+    height: 44px;
+    width: 400px;
+    object-fit: cover;
+  }
+
   &__work {
       height: 360px;
       width: 360px;
@@ -21,9 +27,18 @@
       
   }
 
+  // Workページのヘッダーの飾りの大きさ
   &__workheader {
      height: 40px;
      width: 40px;
   }
+
+  // Workページのコンテンツの大きさ  
+  &__workcontent {
+     height: 460px;
+     width: 920px; 
+     object-fit: cover;
+  }
+
 
 }

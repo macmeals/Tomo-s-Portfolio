@@ -1,11 +1,12 @@
 .p-header {
-  background-color: fuchsia;
+  background-color: black;
   width: 920px;
   height: 260px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
+  
 
   &__under {
     display: flex;

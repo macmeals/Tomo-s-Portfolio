@@ -420,7 +420,6 @@ input, textarea {
 /* タブレットはWidthが1200pxより小さい */
 /* スマホはWidthが700pxより小さい */
 .l-header {
-  background-color: forestgreen;
   display: flex;
   justify-content: center;
 }
@@ -655,6 +654,12 @@ input, textarea {
   object-fit: cover;
 }
 
+.c-img__logo {
+  height: 44px;
+  width: 400px;
+  object-fit: cover;
+}
+
 .c-img__work {
   height: 360px;
   width: 360px;
@@ -676,12 +681,18 @@ input, textarea {
   width: 40px;
 }
 
+.c-img__workcontent {
+  height: 460px;
+  width: 920px;
+  object-fit: cover;
+}
+
 .c-character__noto {
   font-family: "Noto Sans JP", sans-serif;
 }
 
 .p-header {
-  background-color: fuchsia;
+  background-color: black;
   width: 920px;
   height: 260px;
   display: flex;
@@ -826,7 +837,7 @@ input, textarea {
 }
 
 .p-topwork__linkbox {
-  height: 40px;
+  height: 50px;
   width: 200px;
   display: flex;
   align-items: center;
@@ -1009,6 +1020,7 @@ input, textarea {
 .p-workcontent__header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .p-workcontent__header-l {
@@ -1018,5 +1030,24 @@ input, textarea {
 
 .p-workcontent__header-l > p {
   margin-left: 20px;
+}
+
+.p-workcontent__footer {
+  position: relative;
+}
+
+.p-workcontent__linkbox {
+  background-color: black;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+
+.u-margin__work {
+  margin-top: 100px;
+}
+
+.u-margin__workcontents {
+  margin-top: 80px;
 }
 /*# sourceMappingURL=style.css.map */
