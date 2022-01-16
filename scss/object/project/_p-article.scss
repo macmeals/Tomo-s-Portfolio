@@ -115,7 +115,7 @@
         }
 
         &__linkbox {
-          height: 40px;
+          height: 50px;
           width: 200px;
           display: flex;
           align-items: center;
@@ -283,11 +283,27 @@
      &__header {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
      }
+
      &__header-l {
         @include mixin.verticalcenter;
           >p {
               margin-left: 20px;
           }
      }
+     
+     &__footer {
+        position: relative;
+     }
+
+     &__linkbox {
+        background-color: black;
+        position: absolute;
+        top: -50px;
+        right: 0;
+     }
+
+
+
 }
