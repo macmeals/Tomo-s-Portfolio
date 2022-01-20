@@ -446,6 +446,7 @@ input, textarea {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: black;
 }
 
 .c-icon__twitter {
@@ -1041,6 +1042,42 @@ input, textarea {
   position: absolute;
   top: -50px;
   right: 0;
+}
+
+.p-pagenation {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.p-pagenation__list {
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.p-pagenation__list > li {
+  background-color: black;
+  border: 1px solid;
+  border-color: white;
+}
+
+.p-pagenation__list > li:nth-of-type(2) {
+  background-color: white;
+}
+
+.p-pagenation__list > li:nth-of-type(2) > a {
+  color: black;
+}
+
+.p-pagenation__list > li > a {
+  display: block;
+  padding: 10px 0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
 }
 
 .u-margin__work {

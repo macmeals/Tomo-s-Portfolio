@@ -303,7 +303,44 @@
         top: -50px;
         right: 0;
      }
+}
 
+// ページネーションはWP実装時にプラグイン等で実現するので見た目だけ
+.p-pagenation {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 
+     &__list {
+       width: 280px;
+       display: flex;
+       justify-content: space-around;
 
+       >li {
+        
+         background-color:black;
+         border: 1px solid;
+         border-color: white ;
+
+         &:nth-of-type(2) {
+           background-color:white;
+             >a {
+               color: black;
+             }
+         }
+
+         >a {
+          display: block;
+          padding: 10px 0 ;
+          height: 40px;
+          width: 40px;
+          text-align: center;
+           
+         } 
+
+       }
+
+     }
 }
