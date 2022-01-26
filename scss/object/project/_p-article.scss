@@ -1,346 +1,350 @@
 // mixin用名前空間の宣言
- @use '../../foundation/mixin' as mixin;
-
-
+@use "../../foundation/mixin" as mixin;
 
 // Work、about、skill、 contactの共通
 .p-article {
-    background-color: gold;
+  background-color: gold;
+  width: 100vw;
+  height: 100%;
+
+  &__contents {
     width: 100vw;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__contents {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  &__header {
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header-l {
+    display: flex;
+    position: relative;
 
-    &__header {
-        width: 920px;
-        display: flex;
-        justify-content: space-between;
+    > h2 {
+      position: absolute;
+      left: 85px;
+      top: -10px;
+      font-size: 96px;
     }
-    &__header-l {
-        display: flex;
-        position: relative;
-
-        >h2 {
-            position: absolute;
-            left: 85px;
-            top: -10px;
-            font-size: 96px;
-            
-        }
-    }
+  }
 }
 
 // ファーストビュー
-.p-firstview  {
-    width: 100vw;
-    height: 700px;
-    background: url(/img/FV_shikak.png) no-repeat left bottom /80px 80px,
-                url(/img/firstview.jpg) center/cover;
-    @include mixin.verticalcenter;
-    justify-content: center;
-        &__title {
-          width: 920px;
-          font-size: 104px;
-        }
+.p-firstview {
+  width: 100vw;
+  height: 700px;
+  background: url(/img/FV_shikak.png) no-repeat left bottom / 80px 80px,
+    url(/img/firstview.jpg) center/cover;
+  @include mixin.verticalcenter;
+  justify-content: center;
+  &__title {
+    width: 920px;
+    font-size: 104px;
+  }
 }
-
 
 // Work、about、skill、 contactの共通部分
 .p-topwork {
-    position: relative; //Gridと、Moreリンクの位置基準    
-    height: 1200px;
-    width: 920px;
-        &__header {
-          display: flex;
-          justify-content: space-between;
-          
-        
-        }
-        &__header-l {
-          height: 600px;
-          width: 320px;
-          background-color: black;
-          display: flex;
+  position: relative; //Gridと、Moreリンクの位置基準
+  height: 1200px;
+  width: 920px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header-l {
+    height: 600px;
+    width: 320px;
+    background-color: black;
+    display: flex;
 
-              >p {
-              font-family: 'Slabo 27px', serif;
-              font-size: 72px;
-              position: relative;
-              }
-          
-              >p::after {
-              @include mixin.whiteunderline;
-              }
-        }
-        &__header-r{
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
+    > p {
+      font-family: "Slabo 27px", serif;
+      font-size: 72px;
+      position: relative;
+    }
 
-              >h2 {
-                font-family: 'Slabo 27px', serif;
-                font-size: 112px;
-                height: 101px;
-              }
-        }
-        
-        &__body {
-          position: absolute;
-          top: 250px;
-          right: 0px;
-        
-        }
+    > p::after {
+      @include mixin.whiteunderline;
+    }
+  }
+  &__header-r {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
+    > h2 {
+      font-family: "Slabo 27px", serif;
+      font-size: 112px;
+      height: 101px;
+    }
+  }
 
-        &__grid {
-          display: grid;
-          grid-template-columns: repeat(2, 400px);
-          grid-template-rows: repeat(2,400px);;
-          
-          >dl {
-            margin-left: 40px;
-            text-align: center;
-            
-          }
-        }
+  &__body {
+    position: absolute;
+    top: 250px;
+    right: 0px;
+  }
 
-        &__footer {
-          @include mixin.topfooter(1100px);
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 400px);
 
-        }
+    > dl {
+      margin-left: 40px;
+      text-align: center;
+    }
+  }
 
-        &__linkbox {
-          height: 50px;
-          width: 200px;
-          display: flex;
-          align-items: center;
+  &__footer {
+    @include mixin.topfooter(1100px);
+  }
 
-          >a {
-            display: block;
-          
-          }          
-        }
+  &__linkbox {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
 
-} 
+    > a {
+      display: block;
+    }
+  }
+}
 
 // Aboutセクション
 .p-topabout {
-    position: relative;  //紹介文とMoreリンクの位置基準
-    background-color: red;
-    height: 700px;
-    width: 920px;
-        &__body {
-            height: 350px;
-            position: absolute;
-            top: 250px;
-            left: 160px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
+  position: relative; //紹介文とMoreリンクの位置基準
+  background-color: red;
+  height: 700px;
+  width: 920px;
+  &__body {
+    height: 350px;
+    position: absolute;
+    top: 250px;
+    left: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
-        &__name {
-            display: flex;
-            >p {
-              margin-left: 30px;
-            }
-        }
+  &__name {
+    display: flex;
+    > p {
+      margin-left: 30px;
+    }
+  }
 
-        &__footer {
-            @include mixin.topfooter(600px);
-        }
-
+  &__footer {
+    @include mixin.topfooter(600px);
+  }
 }
 
 // skillセクション
 .p-topskill {
-    position: relative; //紹介文とMoreリンクの位置基準
-    height: 1000px;
-    width: 920px;
-    background-color: rebeccapurple;
-        &__body {
-            position: absolute;
-            top: 250px;
-            left: 160px;
-            height: 700px;
-            background-color: saddlebrown;
-            @include mixin.verticalspace-between
-          
-        }
-        &__skill {
-            height: 630px;
-            @include mixin.verticalspace-between
-        }
+  position: relative; //紹介文とMoreリンクの位置基準
+  height: 1000px;
+  width: 920px;
+  background-color: rebeccapurple;
+  &__body {
+    position: absolute;
+    top: 250px;
+    left: 160px;
+    height: 700px;
+    background-color: saddlebrown;
+    @include mixin.verticalspace-between;
+  }
+  &__skill {
+    height: 630px;
+    @include mixin.verticalspace-between;
+  }
 
-        &__skillbox {
-            height: 170px;
-            background: salmon;
-            @include mixin.verticalspace-between
+  &__skillbox {
+    height: 170px;
+    background: salmon;
+    @include mixin.verticalspace-between;
+  }
 
-        }
-
-        &__footer {
-            position: absolute;
-            top: 910px;
-        }
+  &__footer {
+    position: absolute;
+    top: 910px;
+  }
 }
 
 // Contactセクション
 .p-topcontact {
-    position: relative; //説明文とFormの位置基準
-    height: 1000px;
-    width: 920px;
-    background-color:black;
-        &__body {
-          position: absolute;
-          top: 250px;
-          left: 160px;
-          height: 600px;
-          
-        }
+  position: relative; //説明文とFormの位置基準
+  height: 1000px;
+  width: 920px;
+  background-color: black;
+  &__body {
+    position: absolute;
+    top: 250px;
+    left: 160px;
+    height: 600px;
+  }
 
-        &__text {
-          height: 100px;
-          @include mixin.verticalspace-between;
-        }
+  &__text {
+    height: 100px;
+    @include mixin.verticalspace-between;
+  }
 
-        &__form {
-          margin-top: 40px;
-          height: 480px;
-          @include mixin.verticalspace-between;
-        }
-        &__content {
-          display: flex;
+  &__form {
+    margin-top: 40px;
+    height: 480px;
+    @include mixin.verticalspace-between;
+  }
+  &__content {
+    display: flex;
 
-          >label {
-              width: 160px;
-              height: 30px;
-              
-          }
+    > label {
+      width: 160px;
+      height: 30px;
+    }
 
-          >input {
-              width: 500px;
-              height: 30px;
-          }
+    > input {
+      width: 500px;
+      height: 30px;
+    }
 
-          >textarea {
-              width: 500px;
-              height: 240px;
-          }
-        }
+    > textarea {
+      width: 500px;
+      height: 240px;
+    }
+  }
 
-        &__footer {
-          @include mixin.topfooter(900px);
-        }
+  &__footer {
+    @include mixin.topfooter(900px);
+  }
 }
 
 // Sideバー
-.p-topside  {
-    &__btn {
-      position: absolute;
-      top: 50px;
-      right: 100px;
-    }
+.p-topside {
+  &__btn {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+  }
 
-    &__link {
-      position: absolute;
-      top: 300px;
-      list-style: none;
-      height: 400px;
-      background-color: cadetblue;
-    }
+  &__link {
+    position: absolute;
+    top: 300px;
+    list-style: none;
+    height: 400px;
+    background-color: cadetblue;
+  }
 
-    &__chara {
-        font-size: 24px;
-        color: black;
-        font-family: 'Slabo 27px', serif;
-       
-    }
+  &__chara {
+    font-size: 24px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
 }
 
-//footer 
+//footer
 .p-footer {
-     height: 80px;
-     @include mixin.verticalspace-between;
-     align-items: center;
-     margin-top: 40px;
+  height: 80px;
+  @include mixin.verticalspace-between;
+  align-items: center;
+  margin-top: 40px;
 
-     &__link {
-         width: 920px;
-         display: flex;
-         justify-content: space-between;
-     }
+  &__link {
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 // Workページのコンテンツ
 .p-workcontent {
-     width: 920px;
-     &__header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-     }
+  width: 920px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
 
-     &__header-l {
-        @include mixin.verticalcenter;
-          >p {
-              margin-left: 20px;
-          }
-     }
-     
-     &__footer {
-        position: relative;
-     }
+  &__header-l {
+    @include mixin.verticalcenter;
+    > p {
+      margin-left: 20px;
+    }
+  }
 
-     &__linkbox {
-        background-color: black;
-        position: absolute;
-        top: -50px;
-        right: 0;
-     }
+  &__footer {
+    position: relative;
+  }
+
+  &__linkbox {
+    background-color: black;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
 }
 
 // ページネーションはWP実装時にプラグイン等で実現するので見た目だけ
 .p-pagenation {
-    margin-top: 200px;
-    margin-bottom: 200px;
-    width: 100vw;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    width: 280px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
-     &__list {
-       width: 280px;
-       display: flex;
-       justify-content: space-around;
+    > li {
+      background-color: black;
+      border: 1px solid;
+      border-color: white;
 
-       >li {
-        
-         background-color:black;
-         border: 1px solid;
-         border-color: white ;
+      &:nth-of-type(2) {
+        background-color: white;
+        > a {
+          color: black;
+        }
+      }
 
-         &:nth-of-type(2) {
-           background-color:white;
-             >a {
-               color: black;
-             }
-         }
+      > a {
+        display: block;
+        padding: 10px 0;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+      }
+    }
+  }
+}
 
-         >a {
-          display: block;
-          padding: 10px 0 ;
-          height: 40px;
-          width: 40px;
-          text-align: center;
-           
-         } 
+// Aboutページ
+.p-aboutcontent {
+  width: 840px;
 
-       }
+  &__header {
+    display: flex;
+  }
 
-     }
+  > p {
+    margin: 50px 0 50px 0;
+  }
+
+  &__footer {
+    width: 920px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    > a {
+      display: block;
+    }
+  }
 }

@@ -37,6 +37,19 @@
             }
     }
 
+    &__subtitle {
+        position: relative;
+           &::after {
+               position: absolute;
+               content: "";
+               width: 720px;
+               height: 1px;
+               background-color: white;
+               left: 0px;
+               bottom: 0px;
+           }
+    }
+
 }
 
 // 矢印のリンク
