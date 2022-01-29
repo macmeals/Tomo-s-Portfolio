@@ -404,8 +404,12 @@ p, label {
   color: white;
 }
 
+p {
+  line-height: 150%;
+}
+
 html {
-  background-color: grey;
+  background-color: black;
 }
 
 html::-webkit-scrollbar {
@@ -563,6 +567,20 @@ input, textarea {
   background-color: white;
 }
 
+.c-underline__subtitle {
+  position: relative;
+}
+
+.c-underline__subtitle::after {
+  position: absolute;
+  content: "";
+  width: 720px;
+  height: 1px;
+  background-color: white;
+  left: 0px;
+  bottom: 0px;
+}
+
 .c-linkline {
   position: relative;
   width: 200px;
@@ -692,6 +710,11 @@ input, textarea {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.c-character__subtitlenum {
+  font-size: 48px;
+  font-family: "Slabo 27px", serif;
+}
+
 .p-header {
   background-color: black;
   width: 920px;
@@ -790,7 +813,7 @@ input, textarea {
 
 .p-topwork__header-l > p::after {
   position: absolute;
-  top: 75px;
+  top: 100px;
   left: -300%;
   content: "";
   width: 400%;
@@ -1080,11 +1103,40 @@ input, textarea {
   text-align: center;
 }
 
+.p-aboutcontent {
+  width: 840px;
+}
+
+.p-aboutcontent__header {
+  display: flex;
+}
+
+.p-aboutcontent > p {
+  margin: 50px 0 50px 0;
+}
+
+.p-aboutcontent__footer {
+  width: 920px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.p-aboutcontent__footer > a {
+  display: block;
+}
+
 .u-margin__work {
   margin-top: 100px;
 }
 
 .u-margin__workcontents {
   margin-top: 80px;
+}
+
+.u-margin__contentfooter {
+  margin: 400px 0 100px 0;
 }
 /*# sourceMappingURL=style.css.map */
