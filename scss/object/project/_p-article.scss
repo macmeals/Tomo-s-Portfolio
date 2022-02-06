@@ -3,7 +3,7 @@
 
 // Work、about、skill、 contactの共通
 .p-article {
-  background-color:blue;
+  background-color:burlywood;
   width: 100vw;
   height: 100%;
 
@@ -348,3 +348,24 @@
     }
   }
 }
+
+
+.p-swiper {
+  width: 100vw;
+  
+
+  &__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__pagination { 
+    width: 300px;
+    left: calc(50% - 150px);
+
+  }
+}
+
+
+
+

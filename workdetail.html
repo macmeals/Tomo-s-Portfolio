@@ -11,11 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Slabo+27px&display=swap"
       rel="stylesheet"
     />
-    <!-- Swiper読み込み -->
+    <!-- Swiper読み込み 通常css -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/swiper-config.js"></script>
-
+    <link rel="stylesheet" href="./css/swiper-pagination.css">
+    
     <title>Tomo's Portfolio</title>
   </head>
   <body>
@@ -81,29 +80,20 @@
               />
             </div>
 
-            <div class="p-workcontent u-margin__work">
-              <div class="p-workcontent__header">
-                <div class="p-workcontent__header-l">
-                  <img src="img/title_red.png" alt="タイトルの飾り" />
-                  <p>デバイス・ガジェットレビューサイト（ブログサイト）</p>
-                </div>
-                <img
-                  src="img/white-undershikaku.png"
-                  alt="タイトルの飾り"
-                  class="c-img__workheader"
-                />
+            <!-- スライダーのコンテナ -->
+            <div class="swiper p-swiper u-margin__work">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper p-swiper__wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide p-swiper__slide"><img src="./img/works-pic.jpg" alt="Slide1" class="c-img__slider"></div>
+                <div class="swiper-slide p-swiper__slide"><img src="./img/workdetail1.jpg" alt="Slide1" class="c-img__slider"></div>
+                <div class="swiper-slide p-swiper__slide"><img src="./img/workdetail2.jpg" alt="Slide1" class="c-img__slider"></div>
               </div>
-              <img
-                src="img/works-pic.jpg"
-                alt="Workコンテンツの画像"
-                class="c-img__workcontent"
-              />
-              <div class="p-workcontent__footer">
-                <div class="p-topwork__linkbox p-workcontent__linkbox">
-                  <a class="c-linkline" href="#">More</a>
-                </div>
-              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination p-swiper__pagination"></div>
             </div>
+
+
 
             <div class="p-workcontent u-margin__workcontents">
               <div class="p-workcontent__header">
@@ -185,7 +175,9 @@
           <small>© Tomo 2021</small>
         </div>
       </footer>
-    </div>
-    
+
+    </div>    
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
