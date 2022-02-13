@@ -706,12 +706,23 @@ input, textarea {
   object-fit: cover;
 }
 
+.c-img__slider {
+  height: 690px;
+  width: 920px;
+  object-fit: cover;
+}
+
 .c-character__noto {
   font-family: "Noto Sans JP", sans-serif;
 }
 
 .c-character__subtitlenum {
   font-size: 48px;
+  font-family: "Slabo 27px", serif;
+}
+
+.c-character__subtitle {
+  font-size: 32px;
   font-family: "Slabo 27px", serif;
 }
 
@@ -743,7 +754,7 @@ input, textarea {
 }
 
 .p-article {
-  background-color: gold;
+  background-color: burlywood;
   width: 100vw;
   height: 100%;
 }
@@ -1128,6 +1139,53 @@ input, textarea {
   display: block;
 }
 
+.p-swiper {
+  width: 100vw;
+}
+
+.p-swiper__slide {
+  display: flex;
+  justify-content: center;
+}
+
+.p-swiper__pagination {
+  width: 300px;
+  left: calc(50% - 150px);
+}
+
+.p-workdetail {
+  width: 920px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-workdetail__header {
+  width: 760px;
+  display: flex;
+}
+
+.p-workdetail__body {
+  width: 680px;
+}
+
+.p-workdetail__pagination {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-workdetail__link {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.p-workdetail__link > a {
+  display: block;
+}
+
 .u-margin__work {
   margin-top: 100px;
 }
@@ -1138,5 +1196,9 @@ input, textarea {
 
 .u-margin__contentfooter {
   margin: 400px 0 100px 0;
+}
+
+.u-margin__article {
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=style.css.map */

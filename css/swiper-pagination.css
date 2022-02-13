@@ -1,0 +1,11 @@
+/* Flocss管理とは別のCSS（JSで作成される自動的なクラスのスタイリング） */
+
+.swiper-pagination-bullet {
+  margin: 0 40px;
+  background: white;
+}
+
+.swiper-pagination-bullet-active {
+  background:red;
+}
+
