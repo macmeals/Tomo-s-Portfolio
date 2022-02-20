@@ -400,3 +400,22 @@
         }
 
 }
+
+.p-contact {
+    &__contents {
+      margin-top: 40px;
+      width: 760px;
+     
+    }
+    &__text{
+      display: flex;
+      margin-top: 40px;
+      >p {
+        width: 200px;
+      }
+
+      >p:nth-child(2) {
+        width: 560px;
+      }
+    }
+}

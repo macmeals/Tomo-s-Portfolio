@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Goolefont適応 Noto Sans JP/ Slabo27 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper読み込み 通常css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper-pagination.css">
+    
+    <title>Tomo's Portfolio</title>
+  </head>
+  <body>
+    <div class="l-body">
+      <header class="l-header">
+        <div class="p-header">
+          <div>
+            <a href="#"
+              ><img
+                src="./img/Portfolio_logo2.png"
+                alt="portfolioのlogo"
+                class="c-img__logo"
+            /></a>
+          </div>
+          <div class="p-header__under">
+            <ul class="p-header__menu c-square">
+              <li><a class="c-underline__white" href="#">About</a></li>
+              <li><a class="c-underline__white" href="#">Work</a></li>
+              <li><a class="c-underline__white" href="#">Skill</a></li>
+              <li><a class="c-underline__black" href="#">Contact</a></li>
+            </ul>
+            <ul class="p-header__icon c-square">
+              <li>
+                <a href="#"
+                  ><img
+                    class="c-icon__instagram"
+                    src="./img/instagram_white.png"
+                    alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="c-icon__twitter"
+                    src="./img/twitterlogo_white.png"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <button class="c-btn">MENU</button>
+        </div>
+      </header>
+      <main class="l-container">
+        <article class="p-article">
+          <div class="p-article__contents">
+            <!-- ボーダライン -->
+            <div class="c-underline__border"></div>
+            <!-- Worksのヘッダー -->
+            <div class="p-article__header">
+              <div class="p-article__header-l">
+                <img
+                  class="c-redicon"
+                  src="./img/shikaku.png"
+                  alt="Workのヘッダーの飾り"
+                />
+                <h2>Contact</h2>
+              </div>
+              <img
+                class="c-img__header"
+                src="./img/header_car.jpg"
+                alt="Workのヘッダーの背景"
+              />
+            </div>
+  
+            
+            <div class="p-contact__contents">
+                <p>以下の内容で送信します。</p>
+                <div class="p-contact__text">
+                    <p>お名前</p>
+                    <p>田中太郎</p>
+                </div>
+                <div class="p-contact__text">
+                    <p>メールアドレス</p>
+                    <p>tanaka_taro@gmail.com</p>
+                </div>
+                <div class="p-contact__text">
+                    <p>お問い合わせ内容</p>
+                    <p>新しく地域の小規模なイベントを立ち上げたいと考えており簡単なWebサイトを作成したいと考えています。いくら位かかりますか？またどれくらいでできますか？</p>
+                </div>
+            </div>
+            <div class="p-workdetail__link u-margin__work u-margin__article">
+              <a class="c-linkline" href="#">送信</a>
+            </div>
+          </div>    
+        </article>
+        <aside class="l-side">
+          <button class="c-btn__side p-topside__btn">MENU</button>
+          <ul class="p-topside__link">
+            <li><a class="p-topside__chara" href="#">Work</a></li>
+            <li><a class="p-topside__chara" href="#">About</a></li>
+            <li><a class="p-topside__chara" href="#">Skill</a></li>
+            <li><a class="p-topside__chara" href="#">Contact</a></li>
+          </ul>
+        </aside>
+      </main>
+      <footer class="l-footer">
+        <div class="c-underline__border"></div>
+        <div class="p-footer">
+          <ul class="p-footer__link">
+            <li><a class="c-underline__white" href="#">Work</a></li>
+            <li><a class="c-underline__white" href="#">About</a></li>
+            <li><a class="c-underline__white" href="#">Skill</a></li>
+            <li><a class="c-underline__white" href="#">Contact</a></li>
+          </ul>
+          <small>© Tomo 2021</small>
+        </div>
+      </footer>
+
+    </div>    
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>

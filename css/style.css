@@ -1186,6 +1186,24 @@ input, textarea {
   display: block;
 }
 
+.p-contact__contents {
+  margin-top: 40px;
+  width: 760px;
+}
+
+.p-contact__text {
+  display: flex;
+  margin-top: 40px;
+}
+
+.p-contact__text > p {
+  width: 200px;
+}
+
+.p-contact__text > p:nth-child(2) {
+  width: 560px;
+}
+
 .u-margin__work {
   margin-top: 100px;
 }
