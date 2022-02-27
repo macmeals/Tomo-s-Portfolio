@@ -726,6 +726,11 @@ input, textarea {
   font-family: "Slabo 27px", serif;
 }
 
+.c-character__subtitlenoto {
+  font-size: 24px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .p-header {
   background-color: black;
   width: 920px;
