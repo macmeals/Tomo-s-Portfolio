@@ -1,7 +1,7 @@
 jQuery( function( $ ) {
 	$( ".p-hamberger" ).on( "click", function() {
-			$( ".p-header__hamburger" ).toggleClass( "is-open" );
-      
+			$( ".c-btn__cross" ).toggleClass( "is-opencross" );
+			$( ".c-hamburger__header" ).toggleClass( "is-open" );
 	} );
 	
 } );
