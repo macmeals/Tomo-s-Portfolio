@@ -36,13 +36,23 @@
 .p-firstview {
   width: 100vw;
   height: 700px;
-  background: url(/img/FV_shikak.png) no-repeat left bottom / 80px 80px,
-    url(/img/firstview.jpg) center/cover;
+  background: url(/img/FV_shikak.png) no-repeat left bottom / 80px 80px,url(/img/firstview.jpg) center/cover;
   @include mixin.verticalcenter;
   justify-content: center;
+
+    @include mixin.tablet {
+      background: url(/img/FV_shikak.png) no-repeat left bottom / 40px 40px,url(/img/firstview.jpg) center/cover;
+      height: 500px;
+    }
+
   &__title {
     width: 920px;
     font-size: 104px;
+    @include mixin.tablet {
+      width: 600px;
+      font-size: 64px;
+    }
+
   }
 }
 
@@ -51,6 +61,13 @@
   position: relative; //Gridと、Moreリンクの位置基準
   height: 1200px;
   width: 920px;
+  
+  @include mixin.tablet {
+    margin-top: 100px;
+    width: 600px;
+    height: 850px;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -65,10 +82,17 @@
       font-family: "Slabo 27px", serif;
       font-size: 72px;
       position: relative;
+
+      @include mixin.tablet {
+        font-size: 56px;
+      }
     }
 
     > p::after {
       @include mixin.whiteunderline;
+      @include mixin.tablet {
+        top: 70px;
+      }
     }
   }
   &__header-r {
@@ -80,6 +104,10 @@
       font-family: "Slabo 27px", serif;
       font-size: 112px;
       height: 101px;
+      @include mixin.tablet {
+        font-size: 72px;
+        height: 68px;
+      }
     }
   }
 
@@ -93,6 +121,10 @@
     display: grid;
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(2, 400px);
+    @include mixin.tablet {
+      grid-template-columns: repeat(2, 250px);
+      grid-template-rows: repeat(2, 250px);
+    }
 
     > dl {
       margin-left: 40px;
@@ -102,6 +134,11 @@
 
   &__footer {
     @include mixin.topfooter(1100px);
+    @include mixin.tablet { 
+      @include mixin.topfooter(800px);
+      width: 600px;
+    }
+
   }
 
   &__linkbox {
@@ -122,6 +159,12 @@
   background-color: red;
   height: 700px;
   width: 920px;
+
+  @include mixin.tablet { 
+    margin-top: 100px;
+    width: 600px;
+  }
+
   &__body {
     height: 350px;
     position: absolute;
@@ -130,6 +173,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @include mixin.tablet { 
+      top: 200px;
+    }
   }
 
   &__name {
@@ -141,6 +187,10 @@
 
   &__footer {
     @include mixin.topfooter(600px);
+    @include mixin.tablet { 
+      @include mixin.topfooter(650px);
+      width: 600px;
+    }
   }
 }
 

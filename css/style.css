@@ -688,6 +688,12 @@ input, textarea {
   object-fit: cover;
 }
 
+@media (max-width: 1200px) {
+  .c-img {
+    height: 500px;
+    width: 200px;
+  }
+}
 .c-img__logo {
   height: 44px;
   width: 400px;
@@ -700,6 +706,12 @@ input, textarea {
   object-fit: cover;
 }
 
+@media (max-width: 1200px) {
+  .c-img__work {
+    height: 220px;
+    width: 220px;
+  }
+}
 .c-img__character {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -838,17 +850,36 @@ input, textarea {
   justify-content: center;
 }
 
+@media (max-width: 1200px) {
+  .p-firstview {
+    background: url(/img/FV_shikak.png) no-repeat left bottom/40px 40px, url(/img/firstview.jpg) center/cover;
+    height: 500px;
+  }
+}
 .p-firstview__title {
   width: 920px;
   font-size: 104px;
 }
 
+@media (max-width: 1200px) {
+  .p-firstview__title {
+    width: 600px;
+    font-size: 64px;
+  }
+}
 .p-topwork {
   position: relative;
   height: 1200px;
   width: 920px;
 }
 
+@media (max-width: 1200px) {
+  .p-topwork {
+    margin-top: 100px;
+    width: 600px;
+    height: 850px;
+  }
+}
 .p-topwork__header {
   display: flex;
   justify-content: space-between;
@@ -867,6 +898,11 @@ input, textarea {
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  .p-topwork__header-l > p {
+    font-size: 56px;
+  }
+}
 .p-topwork__header-l > p::after {
   position: absolute;
   top: 100px;
@@ -877,6 +913,11 @@ input, textarea {
   background-color: white;
 }
 
+@media (max-width: 1200px) {
+  .p-topwork__header-l > p::after {
+    top: 70px;
+  }
+}
 .p-topwork__header-r {
   display: flex;
   flex-direction: column;
@@ -889,6 +930,12 @@ input, textarea {
   height: 101px;
 }
 
+@media (max-width: 1200px) {
+  .p-topwork__header-r > h2 {
+    font-size: 72px;
+    height: 68px;
+  }
+}
 .p-topwork__body {
   position: absolute;
   top: 250px;
@@ -901,6 +948,12 @@ input, textarea {
   grid-template-rows: repeat(2, 400px);
 }
 
+@media (max-width: 1200px) {
+  .p-topwork__grid {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 250px);
+  }
+}
 .p-topwork__grid > dl {
   margin-left: 40px;
   text-align: center;
@@ -916,6 +969,18 @@ input, textarea {
   justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .p-topwork__footer {
+    width: 920px;
+    background-color: black;
+    position: absolute;
+    top: 800px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+  }
+}
 .p-topwork__linkbox {
   height: 50px;
   width: 200px;
@@ -934,6 +999,12 @@ input, textarea {
   width: 920px;
 }
 
+@media (max-width: 1200px) {
+  .p-topabout {
+    margin-top: 100px;
+    width: 600px;
+  }
+}
 .p-topabout__body {
   height: 350px;
   position: absolute;
@@ -944,6 +1015,11 @@ input, textarea {
   justify-content: space-around;
 }
 
+@media (max-width: 1200px) {
+  .p-topabout__body {
+    top: 200px;
+  }
+}
 .p-topabout__name {
   display: flex;
 }
@@ -962,6 +1038,18 @@ input, textarea {
   justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .p-topabout__footer {
+    width: 920px;
+    background-color: black;
+    position: absolute;
+    top: 650px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+  }
+}
 .p-topskill {
   position: relative;
   height: 1000px;
