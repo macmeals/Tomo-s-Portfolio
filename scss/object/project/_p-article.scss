@@ -65,7 +65,7 @@
   @include mixin.tablet {
     margin-top: 100px;
     width: 600px;
-    height: 850px;
+    height: 750px;
   }
 
   &__header {
@@ -115,6 +115,12 @@
     position: absolute;
     top: 250px;
     right: 0px;
+
+    @include mixin.tablet {
+      top: 150px;
+    }
+
+
   }
 
   &__grid {
@@ -135,7 +141,7 @@
   &__footer {
     @include mixin.topfooter(1100px);
     @include mixin.tablet { 
-      @include mixin.topfooter(800px);
+      @include mixin.topfooter(700px);
       width: 600px;
     }
 
@@ -200,6 +206,12 @@
   height: 1000px;
   width: 920px;
   background-color: rebeccapurple;
+    @include mixin.tablet { 
+      margin-top: 100px;
+      height: 850px;
+      width: 600px;
+    }
+
   &__body {
     position: absolute;
     top: 250px;
@@ -207,6 +219,17 @@
     height: 700px;
     background-color: saddlebrown;
     @include mixin.verticalspace-between;
+      @include mixin.tablet {
+        top:150px
+      }
+
+    >p {
+      @include mixin.tablet { 
+        margin-bottom: 50px;
+      }
+    }
+
+    
   }
   &__skill {
     height: 630px;
@@ -231,11 +254,22 @@
   height: 1000px;
   width: 920px;
   background-color: black;
+
+    @include mixin.tablet { 
+      margin-top: 100px;
+      width: 600px;
+    }
+
+
   &__body {
     position: absolute;
     top: 250px;
     left: 160px;
     height: 600px;
+      @include mixin.tablet { 
+        top:150px;
+        width: 440px;
+      }
   }
 
   &__text {
@@ -250,6 +284,11 @@
   }
   &__content {
     display: flex;
+      @include mixin.tablet { 
+        margin-top: 50px;
+        flex-direction: column;
+      }
+
 
     > label {
       width: 160px;
@@ -259,16 +298,25 @@
     > input {
       width: 500px;
       height: 30px;
+        @include mixin.tablet { 
+          width: 440px;
+        }
     }
 
     > textarea {
       width: 500px;
       height: 240px;
+        @include mixin.tablet { 
+          width: 440px;
+        }
     }
   }
 
   &__footer {
     @include mixin.topfooter(900px);
+      @include mixin.tablet { 
+        width: 600px;
+      }
   }
 }
 
@@ -306,6 +354,10 @@
     width: 920px;
     display: flex;
     justify-content: space-between;
+
+    @include mixin.tablet { 
+      display: none;
+    }
   }
 }
 

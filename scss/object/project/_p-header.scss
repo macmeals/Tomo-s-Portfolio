@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   @include mixin.tablet {
+    height: 160px;
     flex-direction:row;
     align-items: center;
   }

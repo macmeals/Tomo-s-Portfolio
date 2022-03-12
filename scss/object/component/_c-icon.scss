@@ -1,5 +1,6 @@
-// ヘッダーのSNSアイコン
+@use "../../foundation/mixin" as mixin; 
 
+// ヘッダーのSNSアイコン
 .c-icon {
     &__twitter {
         width: 38px;
@@ -22,6 +23,11 @@
 .c-redicon {
     height: 80px;
     width: 80px;
+
+    @include mixin.tablet {
+        height: 40px;
+        width: 40px;
+      }
 }
 
 // 白のあしらい（直角の直線）
