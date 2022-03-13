@@ -320,47 +320,6 @@
   }
 }
 
-// Sideバー
-.p-topside {
-  &__btn {
-    position: absolute;
-    top: 50px;
-    right: 100px;
-  }
-
-  &__link {
-    position: absolute;
-    top: 300px;
-    list-style: none;
-    height: 400px;
-    background-color: cadetblue;
-  }
-
-  &__chara {
-    font-size: 24px;
-    color: black;
-    font-family: "Slabo 27px", serif;
-  }
-}
-
-//footer
-.p-footer {
-  height: 80px;
-  @include mixin.verticalspace-between;
-  align-items: center;
-  margin-top: 40px;
-
-  &__link {
-    width: 920px;
-    display: flex;
-    justify-content: space-between;
-
-    @include mixin.tablet { 
-      display: none;
-    }
-  }
-}
-
 // Workページのコンテンツ
 .p-workcontent {
   width: 920px;
