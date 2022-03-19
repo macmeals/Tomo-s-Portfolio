@@ -1,0 +1,18 @@
+//footer
+@use '../../foundation/mixin' as mixin;
+.p-footer {
+  height: 80px;
+  @include mixin.verticalspace-between;
+  align-items: center;
+  margin-top: 40px;
+
+  &__link {
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mixin.tablet { 
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+
+// Sideバー
+.p-side {
+  &__btn {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+  }
+
+  &__link {
+    list-style: none;
+    height: 100vh;
+    background-color:white;
+
+  }
+
+  &__chara {
+    font-size: 24px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+}

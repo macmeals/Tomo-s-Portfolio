@@ -51,8 +51,11 @@
               </li>
             </ul>
           </div>
-          <button class="c-btn">MENU</button>
+          <button class="c-btn p-hamberger">MENU</button>
+          <!-- ハンバーガー用の「✖️」ボタン -->
+          <button class="c-btn__cross p-hamberger"><img class="c-icon__cross" src="./img/test.png" alt="batu"></button>
         </div>
+        <div class="c-hamburger__header"></div>
       </header>
 
       <main class="l-container">
@@ -293,7 +296,7 @@
                     Web制作のお仕事の依頼等、何でもお気軽にお問い合わせ下さい。24時間以内にご返信させて頂きます。（もし24時間経過してもご返信がない場合、再度お問い合わせ下さい。
                   </p>
                   <p>
-                    入力された以下の個人情報の取り扱いは当サイトのプライバシーポリシーに準拠します。プライバシーポリシーはこちらから
+                    入力された以下の個人情報の取り扱いは当サイトのプライバシーポリシーに準拠します。プライバシーポリシーは<a href="#">こちら</a>から
                   </p>
                 </div>
                 <form
@@ -331,13 +334,12 @@
           </div>
           <!-- class="p-article__contents" の閉じタブ -->
         </article>
-        <aside class="l-side">
-          <button class="c-btn__side p-topside__btn">MENU</button>
-          <ul class="p-topside__link">
-            <li><a class="p-topside__chara" href="#">Work</a></li>
-            <li><a class="p-topside__chara" href="#">About</a></li>
-            <li><a class="p-topside__chara" href="#">Skill</a></li>
-            <li><a class="p-topside__chara" href="#">Contact</a></li>
+        <aside class="l-side ">
+          <ul class="p-side__link u-padding__link">
+            <li><a class="p-side__chara" href="#">Work</a></li>
+            <li class="u-margin__workcontents"><a class="p-side__chara" href="#">About</a></li>
+            <li class="u-margin__workcontents"><a class="p-side__chara" href="#">Skill</a></li>
+            <li class="u-margin__workcontents"><a class="p-side__chara" href="#">Contact</a></li>
           </ul>
         </aside>
       </main>
@@ -354,6 +356,10 @@
           <small>© Tomo 2021</small>
         </div>
       </footer>
+      <!-- ハンバーガーメニューを開く時の背景を指定 -->
+      <div class="c-hamburger__background">test</div>
     </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/hamberger.js"></script>
   </body>
 </html>

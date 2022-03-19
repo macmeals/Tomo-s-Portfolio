@@ -1,7 +1,15 @@
+// mixin用名前空間の宣言
+@use "../../foundation/mixin" as mixin;
+
 .c-img {
   height: 600px;
   width: 240px;
   object-fit: cover;
+
+    @include mixin.tablet {
+      height: 500px;
+      width: 200px;
+    }
 
   &__logo {
     height: 44px;
@@ -13,6 +21,11 @@
       height: 360px;
       width: 360px;
       object-fit: cover;
+
+      @include mixin.tablet {
+        height: 220px;
+        width: 220px;
+      }
   }
 
   &__character {

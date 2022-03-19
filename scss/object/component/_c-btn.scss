@@ -35,5 +35,14 @@
             transform: rotate( -45deg );
         }
     }
+
+    &__cross {
+        display: none;
+        &.is-opencross {
+            display: block;
+            z-index: 100;
+
+        }
+    }
 }
 

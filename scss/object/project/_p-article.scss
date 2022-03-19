@@ -36,13 +36,23 @@
 .p-firstview {
   width: 100vw;
   height: 700px;
-  background: url(/img/FV_shikak.png) no-repeat left bottom / 80px 80px,
-    url(/img/firstview.jpg) center/cover;
+  background: url(/img/FV_shikak.png) no-repeat left bottom / 80px 80px,url(/img/firstview.jpg) center/cover;
   @include mixin.verticalcenter;
   justify-content: center;
+
+    @include mixin.tablet {
+      background: url(/img/FV_shikak.png) no-repeat left bottom / 40px 40px,url(/img/firstview.jpg) center/cover;
+      height: 500px;
+    }
+
   &__title {
     width: 920px;
     font-size: 104px;
+    @include mixin.tablet {
+      width: 600px;
+      font-size: 64px;
+    }
+
   }
 }
 
@@ -51,6 +61,13 @@
   position: relative; //Gridと、Moreリンクの位置基準
   height: 1200px;
   width: 920px;
+  
+  @include mixin.tablet {
+    margin-top: 100px;
+    width: 600px;
+    height: 750px;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -65,10 +82,17 @@
       font-family: "Slabo 27px", serif;
       font-size: 72px;
       position: relative;
+
+      @include mixin.tablet {
+        font-size: 56px;
+      }
     }
 
     > p::after {
       @include mixin.whiteunderline;
+      @include mixin.tablet {
+        top: 70px;
+      }
     }
   }
   &__header-r {
@@ -80,6 +104,10 @@
       font-family: "Slabo 27px", serif;
       font-size: 112px;
       height: 101px;
+      @include mixin.tablet {
+        font-size: 72px;
+        height: 68px;
+      }
     }
   }
 
@@ -87,12 +115,22 @@
     position: absolute;
     top: 250px;
     right: 0px;
+
+    @include mixin.tablet {
+      top: 150px;
+    }
+
+
   }
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(2, 400px);
+    @include mixin.tablet {
+      grid-template-columns: repeat(2, 250px);
+      grid-template-rows: repeat(2, 250px);
+    }
 
     > dl {
       margin-left: 40px;
@@ -102,6 +140,11 @@
 
   &__footer {
     @include mixin.topfooter(1100px);
+    @include mixin.tablet { 
+      @include mixin.topfooter(700px);
+      width: 600px;
+    }
+
   }
 
   &__linkbox {
@@ -122,6 +165,12 @@
   background-color: red;
   height: 700px;
   width: 920px;
+
+  @include mixin.tablet { 
+    margin-top: 100px;
+    width: 600px;
+  }
+
   &__body {
     height: 350px;
     position: absolute;
@@ -130,6 +179,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @include mixin.tablet { 
+      top: 200px;
+    }
   }
 
   &__name {
@@ -141,6 +193,10 @@
 
   &__footer {
     @include mixin.topfooter(600px);
+    @include mixin.tablet { 
+      @include mixin.topfooter(650px);
+      width: 600px;
+    }
   }
 }
 
@@ -150,6 +206,12 @@
   height: 1000px;
   width: 920px;
   background-color: rebeccapurple;
+    @include mixin.tablet { 
+      margin-top: 100px;
+      height: 850px;
+      width: 600px;
+    }
+
   &__body {
     position: absolute;
     top: 250px;
@@ -157,6 +219,17 @@
     height: 700px;
     background-color: saddlebrown;
     @include mixin.verticalspace-between;
+      @include mixin.tablet {
+        top:150px
+      }
+
+    >p {
+      @include mixin.tablet { 
+        margin-bottom: 50px;
+      }
+    }
+
+    
   }
   &__skill {
     height: 630px;
@@ -181,11 +254,22 @@
   height: 1000px;
   width: 920px;
   background-color: black;
+
+    @include mixin.tablet { 
+      margin-top: 100px;
+      width: 600px;
+    }
+
+
   &__body {
     position: absolute;
     top: 250px;
     left: 160px;
     height: 600px;
+      @include mixin.tablet { 
+        top:150px;
+        width: 440px;
+      }
   }
 
   &__text {
@@ -200,6 +284,11 @@
   }
   &__content {
     display: flex;
+      @include mixin.tablet { 
+        margin-top: 50px;
+        flex-direction: column;
+      }
+
 
     > label {
       width: 160px;
@@ -209,53 +298,25 @@
     > input {
       width: 500px;
       height: 30px;
+        @include mixin.tablet { 
+          width: 440px;
+        }
     }
 
     > textarea {
       width: 500px;
       height: 240px;
+        @include mixin.tablet { 
+          width: 440px;
+        }
     }
   }
 
   &__footer {
     @include mixin.topfooter(900px);
-  }
-}
-
-// Sideバー
-.p-topside {
-  &__btn {
-    position: absolute;
-    top: 50px;
-    right: 100px;
-  }
-
-  &__link {
-    position: absolute;
-    top: 300px;
-    list-style: none;
-    height: 400px;
-    background-color: cadetblue;
-  }
-
-  &__chara {
-    font-size: 24px;
-    color: black;
-    font-family: "Slabo 27px", serif;
-  }
-}
-
-//footer
-.p-footer {
-  height: 80px;
-  @include mixin.verticalspace-between;
-  align-items: center;
-  margin-top: 40px;
-
-  &__link {
-    width: 920px;
-    display: flex;
-    justify-content: space-between;
+      @include mixin.tablet { 
+        width: 600px;
+      }
   }
 }
 

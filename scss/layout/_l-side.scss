@@ -2,9 +2,16 @@
     position: absolute;
     top: 0%;
     left: 100%;
-    width: 50vw;
+    width: 60vw;
     height: 100%;
     background-color: white;
+    z-index: 75;
+
+    &.is-open {
+        left: 40%;
+        transition: 0.5s all;
+  
+      }
 
    
 

@@ -19,11 +19,16 @@
 @use './object/component/c-square';
 @use './object/component/c-img';
 @use './object/component/c-character';
+@use './object/component/c-hambuger';
+
 
 // 各種コンポーネント
 @use './object/project/p-header';
 @use './object/project/p-article';
+@use './object/project/p-side';
+@use './object/project/p-footer';
 
 // 各種ユーティリティ（マージン等）
 @use './object/utility/u-margin';
+@use './object/utility/u-padding';
 
