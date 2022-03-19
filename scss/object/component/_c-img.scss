@@ -15,6 +15,13 @@
     height: 44px;
     width: 400px;
     object-fit: cover;
+    
+      @include mixin.tablet {
+        height: 30px;
+        width: 265px;
+      }
+
+
   }
 
   &__work {
@@ -37,6 +44,11 @@
       height: 100px;
       width: 520px;
       object-fit: cover;
+
+      @include mixin.tablet {
+        height: 80px;
+        width: 360px;
+      }
       
   }
 
@@ -51,6 +63,11 @@
      height: 460px;
      width: 920px; 
      object-fit: cover;
+
+     @include mixin.tablet {
+      height: 300px;
+      width: 600px;
+    }
   }
 
   &__slider {
