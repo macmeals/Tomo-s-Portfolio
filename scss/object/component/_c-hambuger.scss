@@ -1,5 +1,5 @@
 .c-hamburger {
-  &__header,&__side {
+  &__header {
     background-color: white;
     width: 60vw;
     height: 160px;
@@ -7,10 +7,25 @@
     left: 100%;
     z-index: 75;
 
-    &.is-open {
-      left: 40%;
-      transition: 0.5s all;
+      &.is-open {
+        left: 40%;
+        transition: 0.5s all;
 
-    }
+      }
+  }
+
+  &__background {
+    position: absolute;  //l-body がrelative
+    display: block;
+    background-color: black;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+      &.is-open {
+        left: 0%;
+    
+      }
   }
 }

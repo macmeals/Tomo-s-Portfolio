@@ -431,6 +431,9 @@ input, textarea {
 
 .l-body {
   overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100%;
 }
 
 .l-container {
@@ -441,9 +444,15 @@ input, textarea {
   position: absolute;
   top: 0%;
   left: 100%;
-  width: 50vw;
+  width: 60vw;
   height: 100%;
   background-color: white;
+  z-index: 75;
+}
+
+.l-side.is-open {
+  left: 40%;
+  transition: 0.5s all;
 }
 
 .l-footer {
@@ -764,7 +773,7 @@ input, textarea {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.c-hamburger__header, .c-hamburger__side {
+.c-hamburger__header {
   background-color: white;
   width: 60vw;
   height: 160px;
@@ -773,9 +782,24 @@ input, textarea {
   z-index: 75;
 }
 
-.c-hamburger__header.is-open, .c-hamburger__side.is-open {
+.c-hamburger__header.is-open {
   left: 40%;
   transition: 0.5s all;
+}
+
+.c-hamburger__background {
+  position: absolute;
+  display: block;
+  background-color: black;
+  top: 0%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.c-hamburger__background.is-open {
+  left: 0%;
 }
 
 .p-header {
