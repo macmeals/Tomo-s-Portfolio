@@ -18,6 +18,12 @@
     width: 920px;
     display: flex;
     justify-content: space-between;
+
+      @include mixin.tablet {
+        width: 600px;
+      }
+
+
   }
   &__header-l {
     display: flex;
@@ -28,6 +34,13 @@
       left: 85px;
       top: -10px;
       font-size: 96px;
+
+        @include mixin.tablet {
+          left:45px;
+          font-size: 72px;
+
+        }
+
     }
   }
 }
@@ -323,6 +336,10 @@
 // Workページのコンテンツ
 .p-workcontent {
   width: 920px;
+    @include mixin.tablet { 
+      width: 600px;
+    }
+
   &__header {
     display: flex;
     justify-content: space-between;
