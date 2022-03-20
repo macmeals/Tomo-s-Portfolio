@@ -29,10 +29,10 @@
       width: 360px;
       object-fit: cover;
 
-      @include mixin.tablet {
-        height: 220px;
-        width: 220px;
-      }
+        @include mixin.tablet {
+          height: 220px;
+          width: 220px;
+        }
   }
 
   &__character {
@@ -45,10 +45,10 @@
       width: 520px;
       object-fit: cover;
 
-      @include mixin.tablet {
-        height: 80px;
-        width: 360px;
-      }
+        @include mixin.tablet {
+          height: 80px;
+          width: 360px;
+        }
       
   }
 
@@ -64,16 +64,21 @@
      width: 920px; 
      object-fit: cover;
 
-     @include mixin.tablet {
-      height: 300px;
-      width: 600px;
-    }
+      @include mixin.tablet {
+        height: 300px;
+        width: 600px;
+      }
   }
 
   &__slider {
      height: 690px;
      width: 920px;
      object-fit: cover;
+
+      @include mixin.tablet {
+        height: 450px;
+        width: 600px;
+      }
   }
 
 

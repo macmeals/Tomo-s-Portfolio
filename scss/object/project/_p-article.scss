@@ -449,12 +449,20 @@
     @include mixin.verticalcenter;
     flex-direction: column;
         &__header {
+            margin-bottom: 25px;
             width: 760px;
-            display: flex;        
+            display: flex;    
+              @include mixin.tablet { 
+                width: 600px;
+              }
+            
         }
 
         &__body {
             width: 680px;
+              @include mixin.tablet { 
+                width: 520px;
+              }
         }
 
         &__pagination {

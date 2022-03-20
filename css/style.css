@@ -611,6 +611,11 @@ input, textarea {
   bottom: 0px;
 }
 
+@media (max-width: 1200px) {
+  .c-underline__subtitle::after {
+    width: 560px;
+  }
+}
 .c-linkline {
   position: relative;
   width: 200px;
@@ -772,6 +777,12 @@ input, textarea {
   object-fit: cover;
 }
 
+@media (max-width: 1200px) {
+  .c-img__slider {
+    height: 450px;
+    width: 600px;
+  }
+}
 .c-character__noto {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -1380,14 +1391,25 @@ input, textarea {
 }
 
 .p-workdetail__header {
+  margin-bottom: 25px;
   width: 760px;
   display: flex;
 }
 
+@media (max-width: 1200px) {
+  .p-workdetail__header {
+    width: 600px;
+  }
+}
 .p-workdetail__body {
   width: 680px;
 }
 
+@media (max-width: 1200px) {
+  .p-workdetail__body {
+    width: 520px;
+  }
+}
 .p-workdetail__pagination {
   width: 80vw;
   display: flex;
