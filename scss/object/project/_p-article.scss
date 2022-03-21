@@ -405,6 +405,11 @@
 .p-aboutcontent {
   width: 840px;
 
+    @include mixin.tablet { 
+      width: 600px;
+    }
+
+
   &__header {
     display: flex;
   }
@@ -420,6 +425,10 @@
     display: flex;
     justify-content: end;
     align-items: center;
+
+      @include mixin.tablet { 
+        width: 600px;
+      }
 
     > a {
       display: block;
