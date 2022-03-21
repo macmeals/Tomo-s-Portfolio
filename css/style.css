@@ -1348,6 +1348,11 @@ input, textarea {
   width: 840px;
 }
 
+@media (max-width: 1200px) {
+  .p-aboutcontent {
+    width: 600px;
+  }
+}
 .p-aboutcontent__header {
   display: flex;
 }
@@ -1365,6 +1370,11 @@ input, textarea {
   align-items: center;
 }
 
+@media (max-width: 1200px) {
+  .p-aboutcontent__footer {
+    width: 600px;
+  }
+}
 .p-aboutcontent__footer > a {
   display: block;
 }
