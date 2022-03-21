@@ -9,8 +9,8 @@
 
     &.is-open {
         left: 40%;
-        transition: 0.5s all;
-  
+        transition: 1s ;
+        will-change: transform; //transition要素にどのような変更を加えるかを前もってブラウザに知らせる
       }
 
    
