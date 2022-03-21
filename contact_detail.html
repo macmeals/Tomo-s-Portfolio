@@ -11,9 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Slabo+27px&display=swap"
       rel="stylesheet"
     />
-    <!-- Swiper読み込み 通常css -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/swiper-pagination.css">
     
     <title>Tomo's Portfolio</title>
   </head>
@@ -55,8 +52,11 @@
               </li>
             </ul>
           </div>
-          <button class="c-btn">MENU</button>
+          <button class="c-btn p-hamberger">MENU</button>
+          <!-- ハンバーガー用の「✖️」ボタン -->
+          <button class="c-btn__cross p-hamberger"><img class="c-icon__cross" src="./img/test.png" alt="batu"></button>
         </div>
+        <div class="c-hamburger__header"></div>
       </header>
       <main class="l-container">
         <article class="p-article">
@@ -90,12 +90,11 @@
           </div>    
         </article>
         <aside class="l-side">
-          <button class="c-btn__side p-topside__btn">MENU</button>
-          <ul class="p-topside__link">
-            <li><a class="p-topside__chara" href="#">Work</a></li>
-            <li><a class="p-topside__chara" href="#">About</a></li>
-            <li><a class="p-topside__chara" href="#">Skill</a></li>
-            <li><a class="p-topside__chara" href="#">Contact</a></li>
+          <ul class="p-side__link u-padding__link">
+            <li><a class="p-side__chara" href="#">Work</a></li>
+            <li class="u-margin__workcontents"><a class="p-side__chara" href="#">About</a></li>
+            <li class="u-margin__workcontents"><a class="p-side__chara" href="#">Skill</a></li>
+            <li class="u-margin__workcontents"><a class="p-side__chara" href="#">Contact</a></li>
           </ul>
         </aside>
       </main>
@@ -111,9 +110,10 @@
           <small>© Tomo 2021</small>
         </div>
       </footer>
-
+      <!-- ハンバーガーメニューを開く時の背景を指定 -->
+      <div class="c-hamburger__background"></div>
     </div>    
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/hamberger.js"></script>
   </body>
 </html>

@@ -10,7 +10,7 @@
       &.is-open {
         left: 40%;
         transition: 1s ;
-        will-change: transform; /* ←追記分 */
+        will-change: transform; //transition要素にどのような変更を加えるかを前もってブラウザに知らせる
 
       }
   }

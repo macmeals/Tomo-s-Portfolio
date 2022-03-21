@@ -816,7 +816,6 @@ input, textarea {
   left: 40%;
   transition: 1s;
   will-change: transform;
-  /* ←追記分 */
 }
 
 .c-hamburger__background {
