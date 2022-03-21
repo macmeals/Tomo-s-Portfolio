@@ -485,8 +485,9 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-
-            
+              @include mixin.tablet { 
+                width: 600px;
+              }
 
             >a {
               display: block;
@@ -500,6 +501,10 @@
     &__contents {
       margin-top: 40px;
       width: 760px;
+        @include mixin.tablet { 
+          width: 600px;
+        }
+       
      
     }
     &__text{

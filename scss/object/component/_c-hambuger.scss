@@ -9,7 +9,8 @@
 
       &.is-open {
         left: 40%;
-        transition: 0.5s all;
+        transition: 1s ;
+        will-change: transform; /* ←追記分 */
 
       }
   }
