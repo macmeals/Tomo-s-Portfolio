@@ -5,6 +5,12 @@
     &__twitter {
         width: 38px;
         height: 31px;
+
+            @include mixin.smartphone {
+                width: 19px;
+                height: 16px;
+            }
+    
         
     }
 
@@ -12,10 +18,20 @@
         width: 30px;
         height: 30px;
 
+            @include mixin.smartphone {
+                width: 20px;
+                height: 20px;
+            }
+
     }
     &__cross {
         width: 50px;
         height: 50px;
+
+            @include mixin.smartphone {
+                width: 30px;
+                height: 30px;
+            }
     }
 }
 
@@ -27,7 +43,12 @@
     @include mixin.tablet {
         height: 40px;
         width: 40px;
-      }
+    }
+
+    @include mixin.smartphone {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 // 白のあしらい（直角の直線）

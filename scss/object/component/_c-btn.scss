@@ -11,6 +11,11 @@
     text-align: center;
     border: 1px solid; 
 
+    @include mixin.smartphone {
+        height: 30px;
+        width: 60px;
+    }
+
     &__side {
         height: 50px;
         width: 50px;

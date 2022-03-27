@@ -11,6 +11,12 @@
       width: 200px;
     }
 
+    @include mixin.smartphone {
+      height: 250px;
+      width: 100px;
+    }
+
+
   &__logo {
     height: 44px;
     width: 400px;
@@ -19,6 +25,11 @@
       @include mixin.tablet {
         height: 30px;
         width: 265px;
+      }
+
+      @include mixin.smartphone {
+        height: 15px;
+        width: 140px;
       }
 
 
@@ -33,6 +44,14 @@
           height: 220px;
           width: 220px;
         }
+        
+        @include mixin.tablet {
+          height: 200px;
+          width: 200px;
+        }
+
+
+
   }
 
   &__character {

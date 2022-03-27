@@ -37,10 +37,19 @@
       background-color: white;
       height: 120px ;
 
-      >p {
-        color: black;
-        padding: 40px 0 0 40px;
-      }
+        @include mixin.smartphone {
+          @include mixin.verticalcenter;
+        }
+        
+
+        >p {
+          color: black;
+          padding: 40px 0 0 40px;
+
+            @include mixin.smartphone {
+              padding: 0 20px 0 20px;
+            }
+        }
     }
   
 }
