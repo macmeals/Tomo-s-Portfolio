@@ -1,3 +1,5 @@
+@use "../../foundation/mixin" as mixin;
+
 .c-hamburger {
   &__header {
     background-color: white;
@@ -6,6 +8,10 @@
     position: absolute;
     left: 100%;
     z-index: 75;
+
+    @include mixin.smartphone {
+      height: 100px;
+    } 
 
       &.is-open {
         left: 40%;

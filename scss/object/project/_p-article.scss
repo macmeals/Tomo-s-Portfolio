@@ -1,7 +1,7 @@
 // mixin用名前空間の宣言
 @use "../../foundation/mixin" as mixin;
 
-// Work、about、skill、 contactの共通
+// Top、Work、about、skill、contactページの共通部分
 .p-article {
   background-color:burlywood;
   width: 100vw;
@@ -38,14 +38,15 @@
         @include mixin.tablet {
           left:45px;
           font-size: 72px;
-
         }
+
+        
 
     }
   }
 }
 
-// ファーストビュー
+// Topページ：ファーストビュー
 .p-firstview {
   width: 100vw;
   height: 700px;
@@ -58,28 +59,44 @@
       height: 500px;
     }
 
+    @include mixin.smartphone {
+      background: url(/img/FV_shikak.png) no-repeat left bottom / 30px 30px,url(/img/firstview.jpg) center/cover;
+      height: 235px;
+    }
+
   &__title {
     width: 920px;
     font-size: 104px;
-    @include mixin.tablet {
-      width: 600px;
-      font-size: 64px;
-    }
+      @include mixin.tablet {
+        width: 600px;
+        font-size: 64px;
+      }
+
+      @include mixin.smartphone {
+        width: 300px;
+        font-size: 32px;
+      } 
 
   }
 }
 
-// Work、about、skill、 contactの共通部分
+// Topページ：Work、about、skill、contactセクションの共通部分
 .p-topwork {
   position: relative; //Gridと、Moreリンクの位置基準
   height: 1200px;
   width: 920px;
   
-  @include mixin.tablet {
-    margin-top: 100px;
-    width: 600px;
-    height: 750px;
-  }
+    @include mixin.tablet {
+      margin-top: 100px;
+      width: 600px;
+      height: 750px;
+    }
+
+    @include mixin.smartphone{
+      width: 300px;
+      height: 1180px;
+    }
+
 
   &__header {
     display: flex;
@@ -99,13 +116,22 @@
       @include mixin.tablet {
         font-size: 56px;
       }
+
+      @include mixin.smartphone {
+        font-size: 40px;
+      }
     }
 
     > p::after {
       @include mixin.whiteunderline;
-      @include mixin.tablet {
-        top: 70px;
-      }
+        @include mixin.tablet {
+          top: 70px;
+        }
+        @include mixin.smartphone {
+          top: 50px;
+          left: -100px;
+          width: 145px;
+        }
     }
   }
   &__header-r {
@@ -117,10 +143,17 @@
       font-family: "Slabo 27px", serif;
       font-size: 112px;
       height: 101px;
+
       @include mixin.tablet {
         font-size: 72px;
         height: 68px;
       }
+
+      @include mixin.smartphone{
+        font-size: 48px;
+        height: 48px;
+      }
+
     }
   }
 
@@ -131,6 +164,10 @@
 
     @include mixin.tablet {
       top: 150px;
+    }
+
+    @include mixin.smartphone{
+      right: 50px;
     }
 
 
@@ -145,9 +182,19 @@
       grid-template-rows: repeat(2, 250px);
     }
 
+    @include mixin.smartphone {
+      display: flex;
+      flex-direction: column;
+    }
+
     > dl {
       margin-left: 40px;
       text-align: center;
+      @include mixin.smartphone {
+        margin-bottom: 20px;
+      }
+
+
     }
   }
 
@@ -158,6 +205,11 @@
       width: 600px;
     }
 
+    @include mixin.smartphone{
+      @include mixin.topfooter(1130px);
+      width: 300px;
+    }
+
   }
 
   &__linkbox {
@@ -165,24 +217,31 @@
     width: 200px;
     display: flex;
     align-items: center;
+    @include mixin.smartphone{
+      width: 100px;
+    }
 
     > a {
       display: block;
     }
+
   }
 }
 
-// Aboutセクション
+// Topページ：Aboutセクション
 .p-topabout {
   position: relative; //紹介文とMoreリンクの位置基準
-  background-color: red;
   height: 700px;
   width: 920px;
 
-  @include mixin.tablet { 
-    margin-top: 100px;
-    width: 600px;
-  }
+    @include mixin.tablet { 
+      margin-top: 100px;
+      width: 600px;
+    }
+
+    @include mixin.smartphone{
+      width: 300px;
+    }
 
   &__body {
     height: 350px;
@@ -192,16 +251,43 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    @include mixin.tablet { 
-      top: 200px;
-    }
+
+      @include mixin.tablet { 
+        top: 200px;
+      }
+
+      @include mixin.smartphone{ 
+        height: 450px;
+        top: 150px;
+        left: 0;
+      }
+
   }
 
   &__name {
     display: flex;
+      @include mixin.smartphone{ 
+        flex-direction: column;
+        margin-bottom: 30px;
+  
+      }
+
+    >h3 {
+      @include mixin.smartphone{ 
+        font-size: 24px;
+      }
+    }
+
     > p {
       margin-left: 30px;
+        @include mixin.smartphone{ 
+          margin-left: 0;
+
+        }
     }
+
+    
+
   }
 
   &__footer {
@@ -210,19 +296,26 @@
       @include mixin.topfooter(650px);
       width: 600px;
     }
+    @include mixin.smartphone{ 
+      width: 300px;
+
+    }
   }
 }
 
-// skillセクション
+// Topページ：skillセクション
 .p-topskill {
   position: relative; //紹介文とMoreリンクの位置基準
   height: 1000px;
   width: 920px;
-  background-color: rebeccapurple;
     @include mixin.tablet { 
       margin-top: 100px;
       height: 850px;
       width: 600px;
+    }
+
+    @include mixin.smartphone { 
+      width: 300px;
     }
 
   &__body {
@@ -230,11 +323,15 @@
     top: 250px;
     left: 160px;
     height: 700px;
-    background-color: saddlebrown;
     @include mixin.verticalspace-between;
       @include mixin.tablet {
         top:150px
       }
+      @include mixin.smartphone{
+        left:0;
+      }
+
+
 
     >p {
       @include mixin.tablet { 
@@ -251,17 +348,19 @@
 
   &__skillbox {
     height: 170px;
-    background: salmon;
     @include mixin.verticalspace-between;
   }
 
   &__footer {
     position: absolute;
     top: 910px;
+      @include mixin.tablet {
+         top: 810px;
+      }
   }
 }
 
-// Contactセクション
+// Topページ：Contactセクション
 .p-topcontact {
   position: relative; //説明文とFormの位置基準
   height: 1000px;
@@ -271,6 +370,10 @@
     @include mixin.tablet { 
       margin-top: 100px;
       width: 600px;
+    }
+
+    @include mixin.smartphone { 
+      width: 300px;
     }
 
 
@@ -283,18 +386,37 @@
         top:150px;
         width: 440px;
       }
+      @include mixin.smartphone { 
+        left: 0;
+        width: 300px;
+      }
+
   }
 
   &__text {
-    height: 100px;
+    height: 120px;
     @include mixin.verticalspace-between;
+
+      @include mixin.tablet { 
+        height: 160px;
+      }
+    
+      @include mixin.smartphone { 
+        height: 250px;
+      }
+
   }
 
   &__form {
     margin-top: 40px;
     height: 480px;
     @include mixin.verticalspace-between;
+      @include mixin.smartphone {
+        margin-top:30px;
+        height: 400px;
+      }
   }
+
   &__content {
     display: flex;
       @include mixin.tablet { 
@@ -314,6 +436,9 @@
         @include mixin.tablet { 
           width: 440px;
         }
+        @include mixin.smartphone {
+          width: 300px;
+        }
     }
 
     > textarea {
@@ -322,18 +447,26 @@
         @include mixin.tablet { 
           width: 440px;
         }
+        @include mixin.smartphone {
+          width: 300px;
+          height: 120px;
+        }
     }
   }
 
   &__footer {
-    @include mixin.topfooter(900px);
+    @include mixin.topfooter(920px);
       @include mixin.tablet { 
         width: 600px;
+      }
+      @include mixin.smartphone {
+        top:900px;
+        width: 300px;
       }
   }
 }
 
-// Workページのコンテンツ
+//Workページ： Workセクション
 .p-workcontent {
   width: 920px;
     @include mixin.tablet { 
