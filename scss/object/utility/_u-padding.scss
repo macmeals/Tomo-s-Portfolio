@@ -1,5 +1,12 @@
+// mixin用名前空間の宣言
+@use "../../foundation/mixin" as mixin;
+
 .u-padding {
     &__link {
         padding: 0 0 0 120px;
+
+        @include mixin.smartphone {
+            padding: 0 0 0 60px;
+          }
     }
 }
