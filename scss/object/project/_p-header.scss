@@ -18,6 +18,7 @@
     @include mixin.smartphone {
       width: 300px;
       height: 100px;
+      justify-content: space-between;
     }
 
 
