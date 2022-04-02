@@ -23,6 +23,11 @@
         width: 600px;
       }
 
+      @include mixin.smartphone {
+        width: 300px;
+        margin-top: 10px;
+      }
+
 
   }
   &__header-l {
@@ -40,9 +45,19 @@
           font-size: 72px;
         }
 
-        
-
+        @include mixin.smartphone {
+          top: 8px;
+          left:33px;
+          font-size: 36px;
+        }
     }
+
+    > img {
+        @include mixin.smartphone {
+          margin-top: 10px;
+        }
+      }
+
   }
 }
 
@@ -473,10 +488,18 @@
       width: 600px;
     }
 
+    @include mixin.smartphone {
+      width: 300px;
+    }
+
   &__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+
+      @include mixin.smartphone {
+        margin-bottom: 10px;
+      }
   }
 
   &__header-l {
@@ -505,6 +528,12 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+
+    @include mixin.smartphone {
+      margin-top: 50px;
+      margin-bottom: 120px;
+    }
+
 
   &__list {
     width: 280px;

@@ -45,13 +45,10 @@
           width: 220px;
         }
         
-        @include mixin.tablet {
+        @include mixin.smartphone {
           height: 200px;
           width: 200px;
         }
-
-
-
   }
 
   &__character {
@@ -68,6 +65,11 @@
           height: 80px;
           width: 360px;
         }
+
+        @include mixin.smartphone {
+          height: 40px;
+          width: 180px;
+        }
       
   }
 
@@ -75,6 +77,17 @@
   &__workheader {
      height: 40px;
      width: 40px;
+
+     @include mixin.smartphone {
+      display: none;
+    }
+  }
+
+  &__worktitle {
+    @include mixin.smartphone {
+      height: 35px;
+      width: 5px;
+    }
   }
 
   // Workページのコンテンツの大きさ  
@@ -87,6 +100,12 @@
         height: 300px;
         width: 600px;
       }
+
+      @include mixin.smartphone {
+        height: 150px;
+        width: 300px;
+      }
+
   }
 
   &__slider {

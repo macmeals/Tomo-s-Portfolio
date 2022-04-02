@@ -797,7 +797,7 @@ input, textarea {
     width: 220px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 699px) {
   .c-img__work {
     height: 200px;
     width: 200px;
@@ -819,11 +819,28 @@ input, textarea {
     width: 360px;
   }
 }
+@media (max-width: 699px) {
+  .c-img__header {
+    height: 40px;
+    width: 180px;
+  }
+}
 .c-img__workheader {
   height: 40px;
   width: 40px;
 }
 
+@media (max-width: 699px) {
+  .c-img__workheader {
+    display: none;
+  }
+}
+@media (max-width: 699px) {
+  .c-img__worktitle {
+    height: 35px;
+    width: 5px;
+  }
+}
 .c-img__workcontent {
   height: 460px;
   width: 920px;
@@ -834,6 +851,12 @@ input, textarea {
   .c-img__workcontent {
     height: 300px;
     width: 600px;
+  }
+}
+@media (max-width: 699px) {
+  .c-img__workcontent {
+    height: 150px;
+    width: 300px;
   }
 }
 .c-img__slider {
@@ -924,6 +947,7 @@ input, textarea {
   .p-header {
     width: 300px;
     height: 100px;
+    justify-content: space-between;
   }
 }
 .p-header__under {
@@ -977,6 +1001,12 @@ input, textarea {
     width: 600px;
   }
 }
+@media (max-width: 699px) {
+  .p-article__header {
+    width: 300px;
+    margin-top: 10px;
+  }
+}
 .p-article__header-l {
   display: flex;
   position: relative;
@@ -993,6 +1023,18 @@ input, textarea {
   .p-article__header-l > h2 {
     left: 45px;
     font-size: 72px;
+  }
+}
+@media (max-width: 699px) {
+  .p-article__header-l > h2 {
+    top: 8px;
+    left: 33px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 699px) {
+  .p-article__header-l > img {
+    margin-top: 10px;
   }
 }
 .p-firstview {
@@ -1521,12 +1563,22 @@ input, textarea {
     width: 600px;
   }
 }
+@media (max-width: 699px) {
+  .p-workcontent {
+    width: 300px;
+  }
+}
 .p-workcontent__header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
+@media (max-width: 699px) {
+  .p-workcontent__header {
+    margin-bottom: 10px;
+  }
+}
 .p-workcontent__header-l {
   display: flex;
   align-items: center;
@@ -1555,6 +1607,12 @@ input, textarea {
   justify-content: center;
 }
 
+@media (max-width: 699px) {
+  .p-pagenation {
+    margin-top: 50px;
+    margin-bottom: 120px;
+  }
+}
 .p-pagenation__list {
   width: 280px;
   display: flex;
@@ -1746,10 +1804,20 @@ input, textarea {
   margin-top: 100px;
 }
 
+@media (max-width: 699px) {
+  .u-margin__work {
+    margin-top: 40px;
+  }
+}
 .u-margin__workcontents {
   margin-top: 80px;
 }
 
+@media (max-width: 699px) {
+  .u-margin__workcontents {
+    margin-top: 40px;
+  }
+}
 .u-margin__contentfooter {
   margin: 400px 0 100px 0;
 }
