@@ -42,15 +42,20 @@
            &::after {
                position: absolute;
                content: "";
-               width: 720px;
+               width: 760px;
                height: 1px;
                background-color: white;
                left: 0px;
                bottom: 0px;
 
                 @include mixin.tablet { 
-                    width: 560px;
+                    width: 480px;
                 }
+
+                @include mixin.smartphone { 
+                    width: 280px;
+                }
+
            }
     }
 
@@ -66,6 +71,10 @@
     position: relative;
     width: 200px;
     text-align: center;
+
+     @include mixin.smartphone {
+         width: 100px;
+     }
     
     // 下線のアンダーラインのアニメーション
         &::after{
