@@ -521,7 +521,7 @@
   }
 }
 
-// ページネーションはWP実装時にプラグイン等で実現するので見た目だけ
+//Workページ： ページネーションはWP実装時にプラグイン等で実現するので見た目だけ
 .p-pagenation {
   margin-top: 200px;
   margin-bottom: 200px;
@@ -616,7 +616,7 @@
   }
 }
 
-
+// WorkDetailページ
 .p-swiper {
   width: 100vw;
   
@@ -640,24 +640,45 @@
         &__header {
             margin-bottom: 25px;
             width: 760px;
-            display: flex;    
+            display: flex;  
+
               @include mixin.tablet { 
                 width: 600px;
               }
+
+              @include mixin.smartphone { 
+                width: 300px;
+              }
+
             
         }
 
         &__body {
             width: 680px;
+
               @include mixin.tablet { 
                 width: 520px;
               }
+
+              @include mixin.smartphone { 
+                width: 300px;
+              }
+
+              >p {
+                width: 280px;
+                margin-left: 20px; 
+              }
+
         }
 
         &__pagination {
             width: 80vw;
             display: flex;
-            justify-content: space-between;       
+            justify-content: space-between;  
+            
+            @include mixin.smartphone { 
+              width: 300px;
+            }
         }
 
         &__link {
@@ -667,6 +688,10 @@
             align-items: flex-end;
               @include mixin.tablet { 
                 width: 600px;
+              }
+
+              @include mixin.smartphone { 
+                width: 300px;
               }
 
             >a {
