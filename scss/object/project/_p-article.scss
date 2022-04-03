@@ -566,18 +566,33 @@
 // Aboutページ
 .p-aboutcontent {
   width: 840px;
-
     @include mixin.tablet { 
-      width: 600px;
+      width: 520px;
     }
 
+    @include mixin.smartphone {
+      width: 300px;
+    }
 
   &__header {
     display: flex;
   }
 
   > p {
-    margin: 50px 0 50px 0;
+    margin: 50px 80px 50px 80px;
+    width: 680px;
+      @include mixin.tablet { 
+        width: 440px;
+        margin: 40px 40px 40px 40px;
+      }
+
+      @include mixin.smartphone {
+        width: 280px;
+        margin: 40px 0 40px 20px
+      }
+
+
+
   }
 
   &__footer {
@@ -590,6 +605,9 @@
 
       @include mixin.tablet { 
         width: 600px;
+      }
+      @include mixin.smartphone { 
+        width: 300px;
       }
 
     > a {
