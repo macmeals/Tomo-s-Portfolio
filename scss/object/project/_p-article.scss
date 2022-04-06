@@ -644,10 +644,12 @@
 
               @include mixin.tablet { 
                 width: 600px;
+                margin-left: 40px;
               }
 
               @include mixin.smartphone { 
                 width: 300px;
+                margin: 0px;
               }
 
             
@@ -665,8 +667,15 @@
               }
 
               >p {
-                width: 280px;
-                margin-left: 20px; 
+                @include mixin.tablet { 
+                  margin-left: 20px; 
+                }
+
+                @include mixin.smartphone {
+                  width: 280px;
+                  margin-left: 20px; 
+                }
+                         
               }
 
         }

@@ -905,6 +905,7 @@ input, textarea {
 @media (max-width: 699px) {
   .c-character__subtitle {
     font-size: 24px;
+    margin-bottom: 30px;
   }
 }
 .c-character__subtitlenoto {
@@ -1751,11 +1752,13 @@ input, textarea {
 @media (max-width: 1200px) {
   .p-workdetail__header {
     width: 600px;
+    margin-left: 40px;
   }
 }
 @media (max-width: 699px) {
   .p-workdetail__header {
     width: 300px;
+    margin: 0px;
   }
 }
 .p-workdetail__body {
@@ -1772,11 +1775,17 @@ input, textarea {
     width: 300px;
   }
 }
-.p-workdetail__body > p {
-  width: 280px;
-  margin-left: 20px;
+@media (max-width: 1200px) {
+  .p-workdetail__body > p {
+    margin-left: 20px;
+  }
 }
-
+@media (max-width: 699px) {
+  .p-workdetail__body > p {
+    width: 280px;
+    margin-left: 20px;
+  }
+}
 .p-workdetail__pagination {
   width: 80vw;
   display: flex;
