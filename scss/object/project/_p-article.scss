@@ -3,7 +3,6 @@
 
 // Top、Work、about、skill、contactページの共通部分
 .p-article {
-  background-color:burlywood;
   width: 100vw;
   height: 100%;
 
@@ -523,15 +522,13 @@
 
 //Workページ： ページネーションはWP実装時にプラグイン等で実現するので見た目だけ
 .p-pagenation {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin: 100px 0 100px 0;
   width: 100vw;
   display: flex;
   justify-content: center;
 
     @include mixin.smartphone {
-      margin-top: 50px;
-      margin-bottom: 120px;
+      margin: 70px 0 70px 0;
     }
 
 
@@ -539,6 +536,10 @@
     width: 280px;
     display: flex;
     justify-content: space-around;
+
+      @include mixin.smartphone {
+        width: 200px;
+      }
 
     > li {
       background-color: black;
@@ -558,6 +559,12 @@
         height: 40px;
         width: 40px;
         text-align: center;
+          @include mixin.smartphone {
+            height: 30px;
+            width: 30px;
+            padding: 5px 0;
+          }
+
       }
     }
   }
@@ -644,10 +651,12 @@
 
               @include mixin.tablet { 
                 width: 600px;
+                margin-left: 40px;
               }
 
               @include mixin.smartphone { 
                 width: 300px;
+                margin: 0px;
               }
 
             
@@ -665,8 +674,15 @@
               }
 
               >p {
-                width: 280px;
-                margin-left: 20px; 
+                @include mixin.tablet { 
+                  margin-left: 20px; 
+                }
+
+                @include mixin.smartphone {
+                  width: 280px;
+                  margin-left: 20px; 
+                }
+                         
               }
 
         }
@@ -702,6 +718,7 @@
 
 }
 
+// Cotactページ
 .p-contact {
     &__contents {
       margin-top: 40px;
@@ -709,18 +726,26 @@
         @include mixin.tablet { 
           width: 600px;
         }
-       
+        @include mixin.smartphone{ 
+          width: 300px;
+        }
      
     }
     &__text{
       display: flex;
       margin-top: 40px;
+        @include mixin.smartphone{ 
+          flex-direction: column;
+        }
       >p {
         width: 200px;
       }
 
       >p:nth-child(2) {
         width: 560px;
+          @include mixin.smartphone{ 
+            width: 300px;
+          }
       }
     }
 }
