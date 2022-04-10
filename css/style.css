@@ -616,6 +616,7 @@ input, textarea {
 .c-underline__border {
   height: 20px;
   width: 80vw;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -1001,7 +1002,6 @@ input, textarea {
   }
 }
 .p-article {
-  background-color: burlywood;
   width: 100vw;
   height: 100%;
 }
@@ -1623,8 +1623,7 @@ input, textarea {
 }
 
 .p-pagenation {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin: 100px 0 100px 0;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -1632,8 +1631,7 @@ input, textarea {
 
 @media (max-width: 699px) {
   .p-pagenation {
-    margin-top: 50px;
-    margin-bottom: 120px;
+    margin: 70px 0 70px 0;
   }
 }
 .p-pagenation__list {
@@ -1642,6 +1640,11 @@ input, textarea {
   justify-content: space-around;
 }
 
+@media (max-width: 699px) {
+  .p-pagenation__list {
+    width: 200px;
+  }
+}
 .p-pagenation__list > li {
   background-color: black;
   border: 1px solid;
@@ -1664,6 +1667,13 @@ input, textarea {
   text-align: center;
 }
 
+@media (max-width: 699px) {
+  .p-pagenation__list > li > a {
+    height: 30px;
+    width: 30px;
+    padding: 5px 0;
+  }
+}
 .p-aboutcontent {
   width: 840px;
 }
@@ -1828,11 +1838,21 @@ input, textarea {
     width: 600px;
   }
 }
+@media (max-width: 699px) {
+  .p-contact__contents {
+    width: 300px;
+  }
+}
 .p-contact__text {
   display: flex;
   margin-top: 40px;
 }
 
+@media (max-width: 699px) {
+  .p-contact__text {
+    flex-direction: column;
+  }
+}
 .p-contact__text > p {
   width: 200px;
 }
@@ -1841,6 +1861,11 @@ input, textarea {
   width: 560px;
 }
 
+@media (max-width: 699px) {
+  .p-contact__text > p:nth-child(2) {
+    width: 300px;
+  }
+}
 .p-side__btn {
   position: absolute;
   top: 50px;
@@ -1898,7 +1923,7 @@ input, textarea {
   }
 }
 .u-margin__contentfooter {
-  margin: 400px 0 100px 0;
+  margin-bottom: 100px;
 }
 
 .u-margin__article {
