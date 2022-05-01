@@ -4,17 +4,17 @@
 .u-margin {
     &__work {
        margin-top: 100px;
-       @include mixin.smartphone {
-         margin-top: 40px;
-       }
+         @include mixin.smartphone {
+            margin-top: 40px;
+         }
         
     }
 
     &__workcontents {
       margin-top: 80px;  
-      @include mixin.smartphone {
-         margin-top: 40px;
-       }     
+         @include mixin.smartphone {
+            margin-top: 40px;
+         }     
    }
 
    &__contentfooter {
@@ -23,6 +23,16 @@
 
    &__article {
       margin-bottom: 100px;
+   }
+
+   &__underline {
+      margin-top: 350px;
+         @include mixin.tablet { 
+            margin-top: 150px;
+         }
+         @include mixin.smartphone {
+            margin-top: 80px;
+         } 
    }
 
 
