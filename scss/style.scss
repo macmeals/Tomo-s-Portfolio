@@ -12,7 +12,7 @@
 @use './layout/l-side';
 @use './layout/l-footer';
 
-// 各パーツ（アイコンやボタン、下線）
+// 各パーツ（アイコンやボタン、下線、アニメーションも含む）
 @use './object/component/c-icon';
 @use './object/component/c-btn';
 @use './object/component/c-underline';
@@ -20,6 +20,8 @@
 @use './object/component/c-img';
 @use './object/component/c-character';
 @use './object/component/c-hambuger';
+@use './object/component/c-fadein';
+
 
 
 // 各種コンポーネント

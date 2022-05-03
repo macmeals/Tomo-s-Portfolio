@@ -99,14 +99,16 @@
   position: relative; //Gridと、Moreリンクの位置基準
   height: 1200px;
   width: 920px;
+  margin-top: 100px;
   
     @include mixin.tablet {
-      margin-top: 100px;
+      // margin-top: 100px;
       width: 600px;
       height: 750px;
     }
 
     @include mixin.smartphone{
+      margin-top: 40px;
       width: 300px;
       height: 1180px;
     }
@@ -247,14 +249,15 @@
   position: relative; //紹介文とMoreリンクの位置基準
   height: 700px;
   width: 920px;
+  margin-top: 100px;
 
     @include mixin.tablet { 
-      margin-top: 100px;
       width: 600px;
     }
 
     @include mixin.smartphone{
       width: 300px;
+      margin-top: 30px;
     }
 
   &__body {
@@ -322,14 +325,16 @@
   position: relative; //紹介文とMoreリンクの位置基準
   height: 1000px;
   width: 920px;
+  margin-top: 100px;
     @include mixin.tablet { 
-      margin-top: 100px;
+      
       height: 850px;
       width: 600px;
     }
 
     @include mixin.smartphone { 
       width: 300px;
+      margin-top: 30px;
     }
 
   &__body {
@@ -380,14 +385,15 @@
   height: 1000px;
   width: 920px;
   background-color: black;
+  margin-top: 100px;
 
-    @include mixin.tablet { 
-      margin-top: 100px;
+    @include mixin.tablet {  
       width: 600px;
     }
 
     @include mixin.smartphone { 
       width: 300px;
+      margin-top: 30px;
     }
 
 

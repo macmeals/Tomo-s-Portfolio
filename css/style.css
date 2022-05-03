@@ -949,6 +949,27 @@ input, textarea {
   left: 0%;
 }
 
+.c-fadeTriger {
+  opacity: 0;
+}
+
+.c-fade__in {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .p-header {
   background-color: black;
   width: 920px;
@@ -1102,17 +1123,18 @@ input, textarea {
   position: relative;
   height: 1200px;
   width: 920px;
+  margin-top: 100px;
 }
 
 @media (max-width: 1200px) {
   .p-topwork {
-    margin-top: 100px;
     width: 600px;
     height: 750px;
   }
 }
 @media (max-width: 699px) {
   .p-topwork {
+    margin-top: 40px;
     width: 300px;
     height: 1180px;
   }
@@ -1289,17 +1311,18 @@ input, textarea {
   position: relative;
   height: 700px;
   width: 920px;
+  margin-top: 100px;
 }
 
 @media (max-width: 1200px) {
   .p-topabout {
-    margin-top: 100px;
     width: 600px;
   }
 }
 @media (max-width: 699px) {
   .p-topabout {
     width: 300px;
+    margin-top: 30px;
   }
 }
 .p-topabout__body {
@@ -1379,11 +1402,11 @@ input, textarea {
   position: relative;
   height: 1000px;
   width: 920px;
+  margin-top: 100px;
 }
 
 @media (max-width: 1200px) {
   .p-topskill {
-    margin-top: 100px;
     height: 850px;
     width: 600px;
   }
@@ -1391,6 +1414,7 @@ input, textarea {
 @media (max-width: 699px) {
   .p-topskill {
     width: 300px;
+    margin-top: 30px;
   }
 }
 .p-topskill__body {
@@ -1447,17 +1471,18 @@ input, textarea {
   height: 1000px;
   width: 920px;
   background-color: black;
+  margin-top: 100px;
 }
 
 @media (max-width: 1200px) {
   .p-topcontact {
-    margin-top: 100px;
     width: 600px;
   }
 }
 @media (max-width: 699px) {
   .p-topcontact {
     width: 300px;
+    margin-top: 30px;
   }
 }
 .p-topcontact__body {
@@ -1930,6 +1955,25 @@ input, textarea {
   margin-bottom: 100px;
 }
 
+.u-margin__underline {
+  margin-top: 350px;
+}
+
+@media (max-width: 1200px) {
+  .u-margin__underline {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 699px) {
+  .u-margin__underline {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 699px) {
+  .u-margin__privatepolicy {
+    margin-bottom: 20px;
+  }
+}
 .u-padding__link {
   padding: 0 0 0 120px;
 }
