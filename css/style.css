@@ -1969,6 +1969,11 @@ input, textarea {
     margin-top: 80px;
   }
 }
+@media (max-width: 699px) {
+  .u-margin__privatepolicy {
+    margin-bottom: 20px;
+  }
+}
 .u-padding__link {
   padding: 0 0 0 120px;
 }
