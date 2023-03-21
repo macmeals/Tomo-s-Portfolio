@@ -64,17 +64,17 @@
 .p-firstview {
   width: 100vw;
   height: 700px;
-  background: url(/img/FV_shikak.png) no-repeat left bottom / 80px 80px,url(/img/firstview.jpg) center/cover;
+  background: url(../img/FV_shikak.png) no-repeat left bottom / 80px 80px,url(../img/firstview.jpg) center/cover;
   @include mixin.verticalcenter;
   justify-content: center;
 
     @include mixin.tablet {
-      background: url(/img/FV_shikak.png) no-repeat left bottom / 40px 40px,url(/img/firstview.jpg) center/cover;
+      background: url(../img/FV_shikak.png) no-repeat left bottom / 40px 40px,url(../img/firstview.jpg) center/cover;
       height: 500px;
     }
 
     @include mixin.smartphone {
-      background: url(/img/FV_shikak.png) no-repeat left bottom / 30px 30px,url(/img/firstview.jpg) center/cover;
+      background: url(../img/FV_shikak.png) no-repeat left bottom / 30px 30px,url(../img/firstview.jpg) center/cover;
       height: 235px;
     }
 

@@ -1084,7 +1084,7 @@ input, textarea {
 .p-firstview {
   width: 100vw;
   height: 700px;
-  background: url(/img/FV_shikak.png) no-repeat left bottom/80px 80px, url(/img/firstview.jpg) center/cover;
+  background: url(../img/FV_shikak.png) no-repeat left bottom/80px 80px, url(../img/firstview.jpg) center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1092,13 +1092,13 @@ input, textarea {
 
 @media (max-width: 1200px) {
   .p-firstview {
-    background: url(/img/FV_shikak.png) no-repeat left bottom/40px 40px, url(/img/firstview.jpg) center/cover;
+    background: url(../img/FV_shikak.png) no-repeat left bottom/40px 40px, url(../img/firstview.jpg) center/cover;
     height: 500px;
   }
 }
 @media (max-width: 699px) {
   .p-firstview {
-    background: url(/img/FV_shikak.png) no-repeat left bottom/30px 30px, url(/img/firstview.jpg) center/cover;
+    background: url(../img/FV_shikak.png) no-repeat left bottom/30px 30px, url(../img/firstview.jpg) center/cover;
     height: 235px;
   }
 }
@@ -1984,5 +1984,3 @@ input, textarea {
   }
 }
 /*# sourceMappingURL=style.css.map */
-
-/* WordPress化に置いて必要な部分 */
